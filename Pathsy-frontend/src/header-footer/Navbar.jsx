@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Logo from "../assets/images/logo/Navbarlogo.png"
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
+    const isActive = (path) => {
+        return location.pathname === path;
     };
 
     return (
@@ -15,35 +25,76 @@ function Navbar() {
                 <div className="flex justify-between items-center h-14">
                     {/* Logo */}
                     <div className="flex items-center py-2">
-                        <img 
-                            src={Logo} 
-                            alt="Logo" 
-                            className="h-14 w-auto object-contain"
-                        />
+                        <Link to="/" onClick={closeMenu}>
+                            <img 
+                                src={Logo} 
+                                alt="Logo" 
+                                className="h-14 w-auto object-contain"
+                            />
+                        </Link>
                     </div>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <a href="#" className="relative text-gray-700 hover:text-[#004c99] py-2 text-sm font-medium transition-colors group">
+                            <Link 
+                                to="/aboutUs" 
+                                className={`relative py-2 text-sm font-medium transition-colors group ${
+                                    isActive('/aboutUs') 
+                                        ? 'text-[#004c99]' 
+                                        : 'text-gray-700 hover:text-[#004c99]'
+                                }`}
+                            >
                                 About Us
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-full"></span>
-                            </a>
-                            <a href="#" className="relative text-gray-700 hover:text-[#004c99] py-2 text-sm font-medium transition-colors group">
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                    isActive('/aboutUs') ? 'w-full' : 'w-0 group-hover:w-full'
+                                }`}></span>
+                            </Link>
+                            <Link 
+                                to="/services" 
+                                className={`relative py-2 text-sm font-medium transition-colors group ${
+                                    isActive('/services') 
+                                        ? 'text-[#004c99]' 
+                                        : 'text-gray-700 hover:text-[#004c99]'
+                                }`}
+                            >
                                 Services
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-full"></span>
-                            </a>
-                            <a href="#" className="relative text-gray-700 hover:text-[#004c99] py-2 text-sm font-medium transition-colors group">
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                    isActive('/services') ? 'w-full' : 'w-0 group-hover:w-full'
+                                }`}></span>
+                            </Link>
+                            <Link 
+                                to="/careers" 
+                                className={`relative py-2 text-sm font-medium transition-colors group ${
+                                    isActive('/careers') 
+                                        ? 'text-[#004c99]' 
+                                        : 'text-gray-700 hover:text-[#004c99]'
+                                }`}
+                            >
                                 Careers
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-full"></span>
-                            </a>
-                            <a href="#" className="relative text-gray-700 hover:text-[#004c99] py-2 text-sm font-medium transition-colors group">
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                    isActive('/careers') ? 'w-full' : 'w-0 group-hover:w-full'
+                                }`}></span>
+                            </Link>
+                            <Link 
+                                to="/contact" 
+                                className={`relative py-2 text-sm font-medium transition-colors group ${
+                                    isActive('/contact') 
+                                        ? 'text-[#004c99]' 
+                                        : 'text-gray-700 hover:text-[#004c99]'
+                                }`}
+                            >
                                 Contact
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-full"></span>
-                            </a>
-                            <button className="bg-[#004c99] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors">
-                                Request a Quote
-                            </button>
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                    isActive('/contact') ? 'w-full' : 'w-0 group-hover:w-full'
+                                }`}></span>
+                            </Link>
+                            <Link 
+                                to="/helpAndSupport"
+                                className="bg-[#004c99] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors"
+                            >
+                                Help & Support
+                            </Link>
                         </div>
                     </div>
 
@@ -67,26 +118,70 @@ function Navbar() {
             {isMenuOpen && (
                 <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                        <a href="#" className="relative text-gray-700 hover:text-[#004c99] hover:bg-gray-50 block px-3 py-2 text-base font-medium group">
+                        <Link 
+                            to="/aboutUs" 
+                            onClick={closeMenu}
+                            className={`relative block px-3 py-2 text-base font-medium group ${
+                                isActive('/aboutUs') 
+                                    ? 'text-[#004c99] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                            }`}
+                        >
                             About Us
-                            <span className="absolute bottom-1 left-3 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-[calc(100%-1.5rem)]"></span>
-                        </a>
-                        <a href="#" className="relative text-gray-700 hover:text-[#004c99] hover:bg-gray-50 block px-3 py-2 text-base font-medium group">
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                isActive('/aboutUs') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
+                            }`}></span>
+                        </Link>
+                        <Link 
+                            to="/services" 
+                            onClick={closeMenu}
+                            className={`relative block px-3 py-2 text-base font-medium group ${
+                                isActive('/services') 
+                                    ? 'text-[#004c99] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                            }`}
+                        >
                             Services
-                            <span className="absolute bottom-1 left-3 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-[calc(100%-1.5rem)]"></span>
-                        </a>
-                        <a href="#" className="relative text-gray-700 hover:text-[#004c99] hover:bg-gray-50 block px-3 py-2 text-base font-medium group">
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                isActive('/services') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
+                            }`}></span>
+                        </Link>
+                        <Link 
+                            to="/careers" 
+                            onClick={closeMenu}
+                            className={`relative block px-3 py-2 text-base font-medium group ${
+                                isActive('/careers') 
+                                    ? 'text-[#004c99] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                            }`}
+                        >
                             Careers
-                            <span className="absolute bottom-1 left-3 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-[calc(100%-1.5rem)]"></span>
-                        </a>
-                        <a href="#" className="relative text-gray-700 hover:text-[#004c99] hover:bg-gray-50 block px-3 py-2 text-base font-medium group">
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                isActive('/careers') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
+                            }`}></span>
+                        </Link>
+                        <Link 
+                            to="/contact" 
+                            onClick={closeMenu}
+                            className={`relative block px-3 py-2 text-base font-medium group ${
+                                isActive('/contact') 
+                                    ? 'text-[#004c99] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                            }`}
+                        >
                             Contact
-                            <span className="absolute bottom-1 left-3 w-0 h-0.5 bg-[#004c99] transition-all duration-300 group-hover:w-[calc(100%-1.5rem)]"></span>
-                        </a>
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                isActive('/contact') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
+                            }`}></span>
+                        </Link>
                         <div className="px-3 py-2">
-                            <button className="w-full bg-[#004c99] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors">
-                                Request a Quote
-                            </button>
+                            <Link 
+                                to="/helpAndSupport"
+                                onClick={closeMenu}
+                                className="block w-full bg-[#004c99] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors text-center"
+                            >
+                                Help & Support
+                            </Link>
                         </div>
                     </div>
                 </div>
