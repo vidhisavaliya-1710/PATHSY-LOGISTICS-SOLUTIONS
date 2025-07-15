@@ -74,7 +74,7 @@ function Services() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-[36px] md:text-[36px] font-bold text-gray-800 mb-2">
             Our Services
           </h2>
           <div className="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
