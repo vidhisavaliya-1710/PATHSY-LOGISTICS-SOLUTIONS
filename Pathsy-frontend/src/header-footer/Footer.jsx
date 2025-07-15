@@ -1,33 +1,39 @@
 import React from 'react';
 import { Facebook, Linkedin, Twitter, Instagram, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import logo from '../assets/images/logo/Footerlogo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#004c99] text-white py-12">
+    <footer className="bg-[#002f5d] text-white py-12">
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              {/* <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">S</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">PATHSY</h3>
-                <p className="text-xs text-gray-300">LOGISTICS SOLUTIONS</p>
-                <p className="text-xs text-gray-300">PRIVATE LIMITED</p>
-              </div> */}
+            
+
+              <img src={logo} alt="" />
               
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               Leading Exhibition & Logistics Partner delivering exceptional solutions across India and <br/> globally for over 15 years.
             </p>
-            <div className="flex space-x-3">
-              <Facebook className="w-5 h-5 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors" />
-            </div>
+           <div className="flex space-x-3">
+  <div className="w-10 h-10 bg-[#004c99] rounded-full text-white hover:text-[#004c99] flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+    <Facebook className="w-4 h-4  transition-colors" />
+  </div>
+  <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+    <Linkedin className="w-4 h-4  transition-colors" />
+  </div>
+  <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+    <Twitter className="w-4 h-4  transition-colors" />
+  </div>
+  <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+    <Instagram className="w-4 h-4  transition-colors" />
+  </div>
+</div>
+
+
           </div>
 
           {/* Quick Links */}
@@ -82,8 +88,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-6 border-t border-blue-800">
-          <p className="text-center text-sm text-gray-400">
+        <div className="mt-8 pt-6 border-t border-gray-600">
+          <p className="text-center text-sm text-gray-500">
             © 2025 PATHSY LOGISTICS SOLUTIONS PRIVATE LIMITED. All rights reserved.
           </p>
         </div>
