@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from "../assets/images/logo/Navbarlogo.png"
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +11,15 @@ function Navbar() {
 
     return (
         <nav className="bg-white shadow-sm">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between items-center h-14">
                     {/* Logo */}
-                    <div className="flex items-center">
-                        
-                        
+                    <div className="flex items-center py-2">
+                        <img 
+                            src={Logo} 
+                            alt="Logo" 
+                            className="h-14 w-auto object-contain"
+                        />
                     </div>
 
                     {/* Desktop Navigation */}

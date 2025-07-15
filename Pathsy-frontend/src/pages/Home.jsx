@@ -1,9 +1,11 @@
 import React from 'react';
 import banner from '../assets/images/banner.png';
 import { Quote, Settings } from 'lucide-react';
+import AboutUs from './AboutUs'
 
 function Home() {
   return (
+    <>
     <>
       <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
         {/* Background Image */}
@@ -55,6 +57,8 @@ function Home() {
           </div>
         </div>
       </section>
+    </>
+    <AboutUs/>
     </>
   );
 }
