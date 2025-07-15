@@ -6,6 +6,7 @@ import Services from './pages/Services'
 import Carrers from './pages/Carrers'
 import Contact from './pages/Contact'
 import RequestAQuote from './pages/RequestAQuote'
+import HelpAndSupport from './pages/HelpAndSupport'
 
 function AllRoutes() {
     return (
@@ -17,6 +18,7 @@ function AllRoutes() {
                 <Route path="/careers" element={<Carrers />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/requestAQuote" element={<RequestAQuote />} />
+                <Route path="/helpAndSupport" element={<HelpAndSupport/>}/>
 
 
             </Routes>

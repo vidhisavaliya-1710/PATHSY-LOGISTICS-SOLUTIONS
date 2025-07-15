@@ -3,6 +3,7 @@ import banner from '../assets/images/banner.png';
 import { Quote, Settings } from 'lucide-react';
 import AboutUs from './AboutUs'
 import Services from './Services';
+import HelpAndSupport from './HelpAndSupport';
 
 function Home() {
   return (
@@ -61,6 +62,7 @@ function Home() {
     
     <AboutUs/>
     <Services/>
+    <HelpAndSupport/>
     </>
   );
 }
