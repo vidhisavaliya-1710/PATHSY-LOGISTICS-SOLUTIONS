@@ -24,7 +24,7 @@ function Services() {
       icon: FileText,
       title: 'Event Setup & Exhibition Booths',
       description:
-        'End-to-end event execution — no guesswork, just great results.We handle everything from booth design to final teardown, making your brand stand out at every event',
+        'End-to-end event execution no guesswork, just great results.We handle everything from booth design to final teardown, making your brand stand out at every event',
       link: '#',
     },
     {
@@ -32,7 +32,7 @@ function Services() {
       icon: Truck,
       title: 'End-to-End Logistics',
       description:
-        'Comprehensive logistics solutions including transportation, warehousing, and supply chain management tailored to your business needs.',
+        'Everything your cargo needs from door to destination.Transport, storage, and supply chain solutions that flex with your business demands.',
       link: '#',
     },
     {
@@ -40,7 +40,7 @@ function Services() {
       icon: Warehouse,
       title: 'Warehousing & Freight',
       description:
-        'Secure storage facilities and efficient freight services ensuring your products are handled with care and delivered on time.',
+        'Safe, secure, and always on schedule.Your inventory is handled with care in our reliable storage and freight network.',
       link: '#',
     },
     {
@@ -48,7 +48,7 @@ function Services() {
       icon: Globe,
       title: 'International Cargo',
       description:
-        'Global shipping solutions with expertise in international regulations, customs, and cross-border logistics management.',
+        'Cross borders with confidence.Global shipping is made easy with expert handling of customs, regulations, and routes.',
       link: '#',
     },
     {
@@ -56,7 +56,7 @@ function Services() {
       icon: FileText,
       title: 'Custom Clearance',
       description:
-        'Expert customs clearance services ensuring smooth import-export operations with full compliance and documentation support.',
+        'No paperwork hassles. Just smooth deliveries.We take care of the formalities so you can focus on business.',
       link: '#',
     },
     {
@@ -64,7 +64,7 @@ function Services() {
       icon:UserCog,
       title: 'On-site Management',
       description:
-        'Dedicated on-site teams providing real-time support, coordination, and management throughout your event or logistics operation.',
+        'Logistics support right where you need it.From exhibitions to complex freight operations, our experts are on-ground to keep everything under control.',
       link: '#',
     },
   ];
