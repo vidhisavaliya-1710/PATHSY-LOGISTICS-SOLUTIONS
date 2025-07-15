@@ -6,7 +6,7 @@ import AboutUs from './AboutUs'
 function Home() {
   return (
     <>
-    <>
+    
       <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
         {/* Background Image */}
         <div
@@ -57,7 +57,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </>
+    
     <AboutUs/>
     </>
   );
