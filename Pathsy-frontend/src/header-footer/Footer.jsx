@@ -3,23 +3,24 @@ import { Facebook, Linkedin, Twitter, Instagram, MapPin, Phone, Mail, Clock } fr
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-[#004c99] text-white py-12">
+      <div className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
               <div>
                 <h3 className="text-lg font-bold">PATHSY</h3>
                 <p className="text-xs text-gray-300">LOGISTICS SOLUTIONS</p>
                 <p className="text-xs text-gray-300">PRIVATE LIMITED</p>
-              </div>
+              </div> */}
+              
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Leading Exhibition & Logistics Partner delivering exceptional solutions across India and globally for over 15 years.
+              Leading Exhibition & Logistics Partner delivering exceptional solutions across India and <br/> globally for over 15 years.
             </p>
             <div className="flex space-x-3">
               <Facebook className="w-5 h-5 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors" />
@@ -30,7 +31,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className='ms-15'>
             <h4 className="text-orange-400 font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Home</a></li>
@@ -42,7 +43,7 @@ const Footer = () => {
           </div>
 
           {/* Our Services */}
-          <div>
+          <div className=''>
             <h4 className="text-orange-400 font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Exhibition Booths</a></li>
