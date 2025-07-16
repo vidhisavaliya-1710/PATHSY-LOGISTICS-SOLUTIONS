@@ -1,6 +1,7 @@
 import React from 'react';
 import { Network, Clock, Headphones, Shield, Phone, ExternalLink } from 'lucide-react';
 import helpAndsupport from "../assets/images/helpandsupport.png"
+import { Link } from 'react-router-dom';
 
 
 function HelpAndSupport() {
@@ -100,10 +101,12 @@ function HelpAndSupport() {
                     </h3>
 
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+                       <Link to='/contact'>
                         <button className="bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto">
                             <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                             Contact Us Today
                         </button>
+                       </Link>
 
                         
                     </div>
