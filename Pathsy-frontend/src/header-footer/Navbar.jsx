@@ -20,7 +20,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-white shadow-sm">
+        <nav className="bg-white shadow-sm sticky top-0 z-50">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-14">
                     {/* Logo */}
@@ -37,6 +37,19 @@ function Navbar() {
                     {/* Desktop Navigation */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
+                            <Link 
+                                to="/" 
+                                className={`relative py-2 text-sm font-medium transition-colors group ${
+                                    isActive('/') 
+                                        ? 'text-[#004c99]' 
+                                        : 'text-gray-700 hover:text-[#004c99]'
+                                }`}
+                            >
+                                Home
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                    isActive('/') ? 'w-full' : 'w-0 group-hover:w-full'
+                                }`}></span>
+                            </Link>
                             <Link 
                                 to="/aboutUs" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
@@ -118,6 +131,20 @@ function Navbar() {
             {isMenuOpen && (
                 <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                        <Link 
+                            to="/" 
+                            onClick={closeMenu}
+                            className={`relative block px-3 py-2 text-base font-medium group ${
+                                isActive('/') 
+                                    ? 'text-[#004c99] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                            }`}
+                        >
+                            Home
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                isActive('/') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
+                            }`}></span>
+                        </Link>
                         <Link 
                             to="/aboutUs" 
                             onClick={closeMenu}

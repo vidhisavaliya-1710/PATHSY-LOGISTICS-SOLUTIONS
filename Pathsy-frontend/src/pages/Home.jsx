@@ -10,7 +10,7 @@ import Contact from './Contact';
 function Home() {
   return (
     <>
-    
+
       <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
   {/* Background Image */}
   <div
@@ -26,7 +26,7 @@ function Home() {
     <div className="max-w-xl text-left">
       {/* Heading */}
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-4 sm:mb-6">
-        We Bring Your Events to Life &
+         We Bring Your Events to Life &
         <span className="text-orange-400 block mt-1 sm:mt-2">
           Deliver Without Limits
         </span>
@@ -39,7 +39,7 @@ function Home() {
 
       {/* Description */}
       <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-5 leading-relaxed">
-        From planning to execution, we handle every move with care, speed, and precision.
+         From planning to execution, we handle every move with care, speed, and precision.
         Making your exhibitions memorable and your deliveries unstoppable that’s our promise.
       </p>
 
@@ -77,7 +77,7 @@ function Home() {
     <Services/>
     <HelpAndSupport/>
     <Careers/>
-    <Contact/>
+      <Contact />
     </>
   );
 }
