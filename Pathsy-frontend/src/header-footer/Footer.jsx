@@ -6,62 +6,57 @@ const Footer = () => {
   return (
     <footer className="bg-[#002f5d] text-white py-12">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 sm:col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2">
-            
-
               <img src={logo} alt="" />
-              
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Leading Exhibition & Logistics Partner delivering exceptional solutions across India and <br/> globally for over 15 years.
+              Leading Exhibition & Logistics Partner delivering exceptional solutions across India and <br className="hidden md:block"/> globally for over 15 years.
             </p>
-           <div className="flex space-x-3">
-  <div className="w-10 h-10 bg-[#004c99] rounded-full text-white hover:text-[#004c99] flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
-    <Facebook className="w-4 h-4  transition-colors" />
-  </div>
-  <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
-    <Linkedin className="w-4 h-4  transition-colors" />
-  </div>
-  <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
-    <Twitter className="w-4 h-4  transition-colors" />
-  </div>
-  <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
-    <Instagram className="w-4 h-4  transition-colors" />
-  </div>
-</div>
-
-
+            <div className="flex space-x-3">
+              <div className="w-10 h-10 bg-[#004c99] rounded-full text-white hover:text-[#004c99] flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+                <Facebook className="w-4 h-4 transition-colors" />
+              </div>
+              <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+                <Linkedin className="w-4 h-4 transition-colors" />
+              </div>
+              <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+                <Twitter className="w-4 h-4 transition-colors" />
+              </div>
+              <div className="w-10 h-10 bg-[#004c99] text-white hover:text-[#004c99] rounded-full flex items-center justify-center hover:bg-white transition-colors cursor-pointer">
+                <Instagram className="w-4 h-4 transition-colors" />
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
-          <div className='ms-15'>
+          <div className='md:ms-15'>
             <h4 className="text-orange-400 font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Services</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Careers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Contact</a></li>
+              <li><a href="/" className="text-gray-300 hover:text-white text-sm transition-colors">Home</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-white text-sm transition-colors">About Us</a></li>
+              <li><a href="/services" className="text-gray-300 hover:text-white text-sm transition-colors">Services</a></li>
+              <li><a href="/careers" className="text-gray-300 hover:text-white text-sm transition-colors">Careers</a></li>
+              <li><a href="/contact" className="text-gray-300 hover:text-white text-sm transition-colors">Contact</a></li>
             </ul>
           </div>
 
           {/* Our Services */}
-          <div className=''>
+          <div className='sm:col-span-2 md:col-span-1'>
             <h4 className="text-orange-400 font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Exhibition Booths</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Logistics Solutions</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Warehousing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">International Cargo</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Custom Clearance</a></li>
+              <li><a href="/services/exhibition-booths" className="text-gray-300 hover:text-white text-sm transition-colors">Exhibition Booths</a></li>
+              <li><a href="/services/logistics-solutions" className="text-gray-300 hover:text-white text-sm transition-colors">Logistics Solutions</a></li>
+              <li><a href="/services/warehousing" className="text-gray-300 hover:text-white text-sm transition-colors">Warehousing</a></li>
+              <li><a href="/services/international-cargo" className="text-gray-300 hover:text-white text-sm transition-colors">International Cargo</a></li>
+              <li><a href="/services/custom-clearance" className="text-gray-300 hover:text-white text-sm transition-colors">Custom Clearance</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="sm:col-span-2 md:col-span-1">
             <h4 className="text-orange-400 font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
