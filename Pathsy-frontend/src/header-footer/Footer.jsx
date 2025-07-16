@@ -1,8 +1,10 @@
 import React from 'react';
 import { Facebook, Linkedin, Twitter, Instagram, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import logo from '../assets/images/logo/Footerlogo.png'
+import { Link,useLocation } from 'react-router-dom';
 
 const Footer = () => {
+      const location = useLocation();
   return (
     <footer className="bg-[#002f5d] text-white py-12">
       <div className="max-w-5xl mx-auto px-6">
@@ -35,11 +37,11 @@ const Footer = () => {
           <div className='md:ms-15'>
             <h4 className="text-orange-400 font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-white text-sm transition-colors">Home</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-white text-sm transition-colors">About Us</a></li>
-              <li><a href="/services" className="text-gray-300 hover:text-white text-sm transition-colors">Services</a></li>
-              <li><a href="/careers" className="text-gray-300 hover:text-white text-sm transition-colors">Careers</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-white text-sm transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-white text-sm transition-colors">Home</Link></li>
+              <li><Link to="/aboutUs" className="text-gray-300 hover:text-white text-sm transition-colors">About Us</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white text-sm transition-colors">Services</Link></li>
+              <li><Link to="/careers" className="text-gray-300 hover:text-white text-sm transition-colors">Careers</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white text-sm transition-colors">Contact</Link></li>
             </ul>
           </div>
 
