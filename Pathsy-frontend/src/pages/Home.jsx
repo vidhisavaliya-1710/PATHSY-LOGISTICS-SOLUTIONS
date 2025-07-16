@@ -6,6 +6,7 @@ import Services from './Services';
 import HelpAndSupport from './HelpAndSupport';
 import Careers from './Carrers';
 import Contact from './Contact';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -59,14 +60,14 @@ function Home() {
 
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4">
-        <button className="bg-[#004c99] hover:bg-white text-white hover:text-[#004c99] px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center">
+        <Link to='/contact' className="bg-[#004c99] hover:bg-white text-white hover:text-[#004c99] px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center">
           <span className="mr-2"><Quote className="w-4 h-4" /></span>
           Get a Quote
-        </button>
-        <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center">
+        </Link>
+        <Link to="services" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center">
           <span className="mr-2"><Settings className="w-4 h-4" /></span>
           Our Services
-        </button>
+        </Link>
       </div>
     </div>
   </div>
