@@ -5,7 +5,6 @@ import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import Carrers from './pages/Carrers'
 import Contact from './pages/Contact'
-import RequestAQuote from './pages/RequestAQuote'
 import HelpAndSupport from './pages/HelpAndSupport'
 
 function AllRoutes() {
@@ -17,7 +16,6 @@ function AllRoutes() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/careers" element={<Carrers />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/requestAQuote" element={<RequestAQuote />} />
                 <Route path="/helpAndSupport" element={<HelpAndSupport/>}/>
 
 
