@@ -26,24 +26,39 @@ function Home() {
           <div className="max-w-xl text-left">
             {/* Heading */}
             <h1 className="text-4xl md:text-4xl font-bold text-white leading-tight mb-6">
-              We Bring Your Events to Life & 
+             We Bring Your Events to Life &
               <span className="text-orange-400 block mt-2">
-                Deliver Beyond Borders
+                Deliver Without Limits
               </span>
             </h1>
 
-            {/* Subheading */}
-            <p className="text-xl text-gray-200 font-medium mb-4">
-              Leading Exhibition & Logistics Partner Across India & 
-              <span className="block">Globally</span>
+            <p className="text-xl text-gray-200 font-medium mb-3">
+              Your trusted partner for Exhibition & Logistics solutions across India and beyond. 
+              {/* <span className="block">Globally</span> */}
             </p>
+            {/* Subheading */}
 
             {/* Description */}
-            <p className="text-sm text-gray-300 mb-8 leading-relaxed">
-              From seamless event setups to comprehensive logistics solutions, we deliver 
-              <span className="block">excellence at every step. Trust us to make your exhibitions unforgettable and</span>
-              your deliveries dependable.
+            <p className="text-md text-gray-300 mb-5 leading-relaxed">
+             From planning to execution, we handle every move with care, speed, and precision.Making your exhibitions memorable and your deliveries unstoppable — that’s our promise.
             </p>
+
+
+            <ul className="text-white text-md mb-6 space-y-3">
+  <li className="flex items-start">
+    <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+    Seamless setups
+  </li>
+  <li className="flex items-start">
+    <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+    Smart logistics
+  </li>
+  <li className="flex items-start">
+    <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+    Global reach, local touch
+  </li>
+</ul>
+
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
