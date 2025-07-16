@@ -5,6 +5,7 @@ import AboutUs from './AboutUs'
 import Services from './Services';
 import HelpAndSupport from './HelpAndSupport';
 import Careers from './Carrers';
+import Contact from './Contact';
 
 function Home() {
   return (
@@ -80,6 +81,7 @@ function Home() {
     <Services/>
     <HelpAndSupport/>
     <Careers/>
+    <Contact/>
     </>
   );
 }
