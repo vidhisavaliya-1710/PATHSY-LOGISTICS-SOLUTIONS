@@ -8,27 +8,24 @@ function HelpAndSupport() {
     const features = [
         {
             icon: <Network className="w-6 h-6" />,
-            title: "PAN India Network",
-            subtitle: "Connected like never before.",
-            description: "Our expansive logistics footprint spans 50+ cities, powered by local expertise and global efficiency — ensuring smooth operations, wherever you are."
+            title: "Global Networkk",
+            description: "Partnerships with trusted carriers worldwide."
         },
         {
             icon: <Clock className="w-6 h-6" />,
-            title: "On-Time Delivery",
-            subtitle: "Because timing is everything.",
-            description: "With a 99.5% on-time success rate, we combine smart tracking and proactive communication to keep your deliveries always on schedule."
+            title: " Eco-Friendly Logistics ",
+            description: "Sustainable practices for reduced carbon footprint."
         },
         {
             icon: <Headphones className="w-6 h-6" />,
-            title: "24/7 Support",
-            subtitle: "Real people. Real help.",
-            description: "Whether it's day or night, our dedicated account managers are always available to guide, update, and support you — every step of the way."
+            title: "24/7 Tracking Dashboard",
+            description: "Know your shipment’s status anytime."
         },
         {
             icon: <Shield className="w-6 h-6" />,
-            title: "Secure & Reliable",
+            title: "Dedicated Support",
             subtitle: "Your cargo, our responsibility.",
-            description: "We prioritize safety with robust protocols and insurance coverage — ensuring every shipment is protected from origin to destination."
+            description: "A single point of contact for all queries."
         }
     ];
 
@@ -55,7 +52,7 @@ function HelpAndSupport() {
             <div className="max-w-6xl mx-auto relative z-10">
                 {/* Header */}
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-3 md:mb-4 px-2">
+                    <h2 className="text-2xl sm:text-3xl md:text-[36px] lg:text-[36px] font-bold text-white mb-2 sm:mb-3 md:mb-2 px-2">
                         What Makes Us Different
                     </h2>
                     <div className="w-16 sm:w-20 md:w-24 h-1 bg-orange-500 mx-auto mb-4 sm:mb-6"></div>
@@ -82,11 +79,6 @@ function HelpAndSupport() {
                                 {feature.title}
                             </h3>
 
-                            <h3 className="text-sm sm:text-base md:text-lg font-semibold text-white mb-2 sm:mb-3 transition-colors duration-300">
-                                {feature.subtitle}
-                            </h3>
-
-                            {/* Description */}
                             <p className="text-blue-100 text-xs sm:text-sm md:text-base leading-relaxed">
                                 {feature.description}
                             </p>
@@ -101,14 +93,14 @@ function HelpAndSupport() {
                     </h3>
 
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-                       <Link to='/contact'>
-                        <button className="bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto">
-                            <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                            Contact Us Today
-                        </button>
-                       </Link>
+                        <Link to='/contact'>
+                            <button className="bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto">
+                                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                                Contact Us Today
+                            </button>
+                        </Link>
 
-                        
+
                     </div>
                 </div>
             </div>
