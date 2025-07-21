@@ -36,7 +36,7 @@ function Careers() {
                 'Flexible Work-Life Balance',
                 'Work With Top Brands',
               ].map((text, idx) => (
-                <li key={idx} className="flex items-start">
+                <li key={idx} className="flex items-start mb-1">
                   <span className="text-orange-500 text-xl mr-3">●</span>
                   <span className="text-gray-600 text-base leading-relaxed">
                     {text}
