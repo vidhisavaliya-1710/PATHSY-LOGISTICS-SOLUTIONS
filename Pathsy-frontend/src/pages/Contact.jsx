@@ -1,29 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MapPin, Phone, Mail, Clock, Zap } from 'lucide-react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = () => {
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
-
   return (
     <div className="min-h-screen bg-[#e6f2ff] py-6 sm:py-8 md:py-12 px-4">
       <div className="max-w-6xl mx-auto">
@@ -38,116 +16,25 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mx-0 sm:mx-4 md:mx-7">
-          {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
-            <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">Send us a Message</h2>
-            
-            <div className="space-y-4 sm:space-y-6">
-              {/* Name Fields */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 text-sm sm:text-base border-[1.5px] border-[#e6f2ff] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 text-sm sm:text-base border-[1.5px] border-[#e6f2ff] rounded-md focus:outline-none focus:ring-2 focus:ring-[#004c99] focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              {/* Email */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 text-sm sm:text-base border-[1.5px] border-[#e6f2ff] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              {/* Phone */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 text-sm sm:text-base border-[1.5px] border-[#e6f2ff] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              {/* Service */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Service Interested In
-                </label>
-                <select
-                  name="service"
-                  value={formData.service}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 text-sm sm:text-base border-[1.5px] border-[#e6f2ff] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  <option value="">Select a service...</option>
-                  <option value="exhibition">Exhibition Services</option>
-                  <option value="logistics">Logistics</option>
-                  <option value="consulting">Consulting</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              {/* Message */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows={4}
-                  placeholder="Tell us about your project requirements..."
-                  className="w-full px-3 py-2 text-sm sm:text-base border-[1.5px] border-[#e6f2ff] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                />
-              </div>
-
-              {/* Submit Button */}
-              <button
-                onClick={handleSubmit}
-                className="w-full bg-[#004c99] text-white py-3 px-6 rounded-md hover:bg-[#004c99] transition-colors duration-200 font-medium text-sm sm:text-base"
-              >
-                Send Message
-              </button>
-            </div>
+          {/* Embedded Map */}
+          <div className="rounded-lg overflow-hidden shadow-lg w-full h-[400px] md:h-full">
+            <iframe
+              title="Our Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.95065306587!2d76.76354931726667!3d28.64428744177972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1753075881620!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full border-0"
+            ></iframe>
           </div>
 
           {/* Contact Information */}
           <div className="space-y-6 sm:space-y-8">
             <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">Get in Touch</h2>
-              
+
               <div className="space-y-4 sm:space-y-6">
                 {/* Corporate Office */}
                 <div className="flex items-start space-x-3 sm:space-x-4">
@@ -179,7 +66,7 @@ export default function Contact() {
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Phone</h3>
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Email</h3>
                     <p className="text-gray-600 text-sm sm:text-base break-all">info@pratheylogistics.com</p>
                     <p className="text-gray-500 text-xs sm:text-sm">Quick Response Guaranteed</p>
                   </div>
@@ -199,26 +86,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Quick Response Promise */}
-            <div className="bg-[#004c99] text-white rounded-lg p-4 sm:p-6 md:p-8 relative overflow-hidden">
-              <div className="absolute top-4 right-4">
-                
-              </div>
-              
-              <div className="flex items-center space-x-3 mb-3 sm:mb-4">
-                <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400 flex-shrink-0" />
-                <h3 className="text-lg sm:text-xl font-semibold">Quick Response Promise</h3>
-              </div>
-              
-              <p className="text-blue-100 mb-3 sm:mb-4 text-sm sm:text-base">
-                We understand that time is crucial in your business. Our team responds to all inquiries within 2 hours during business hours.
-              </p>
-              
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"></div>
-                <span className="text-orange-400 font-medium text-sm sm:text-base">Guaranteed Response Within 2 Hours</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
