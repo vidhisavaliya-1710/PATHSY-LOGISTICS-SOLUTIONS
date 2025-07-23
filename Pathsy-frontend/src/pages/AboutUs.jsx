@@ -42,7 +42,7 @@ export default function AboutUs() {
                         {/* Badge - Responsive positioning */}
                         <div className="absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 -right-2 sm:-right-4 bg-[#004c99] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow-lg z-10 max-w-[140px] sm:max-w-none">
                             <div className="text-2xl sm:text-3xl font-bold">
-                                <CountUp end={15} suffix="+" />
+                                <CountUp end={2} suffix="+" />
                             </div>
                             <div className="text-xs sm:text-sm font-medium">
                                 Years of Moving Ideas
@@ -59,8 +59,8 @@ export default function AboutUs() {
                             <div className="w-14 h-1 bg-[#ff6600] mb-4"></div>
 
                             <p className="text-[#808080] mb-4 leading-relaxed text-sm sm:text-base lg:text-[16px]">
-                                <span className="font-semibold">At Pathsy Logistics Solutions Pvt. Ltd.,</span> we believe logistics is more than moving cargo — it's about moving possibilities.
-                                For over 15 years, we've helped brands showcase their products and reach new markets through seamless exhibition and logistics solutions across India and worldwide.
+                                <span className="font-semibold">At Pathsy Logistics Solutions Pvt. Ltd.,</span> we believe logistics is more than moving cargo  it's about moving possibilities.
+                                For over 2+ years, we've helped brands showcase their products and reach new markets through seamless exhibition and logistics solutions across India and worldwide.
                                 internationally.
                             </p>
 
@@ -78,7 +78,7 @@ export default function AboutUs() {
                                     <h3 className="text-base sm:text-lg font-semibold text-gray-900">Our Mission</h3>
                                 </div>
                                 <p className="text-[#808080] text-xs sm:text-sm leading-relaxed">
-                                    To deliver impactful logistics and exhibition solutions that help businesses thrive — locally and globally.
+                                    To deliver impactful logistics and exhibition solutions that help businesses thrive  locally and globally.
                                 </p>
                             </div>
 
@@ -97,7 +97,7 @@ export default function AboutUs() {
                         <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-6">
                             <div className="text-center">
                                 <div className="text-2xl sm:text-3xl font-bold text-[#004c99] mb-1 sm:mb-2">
-                                    <CountUp end={500} suffix="+" />
+                                    <CountUp end={200} suffix="+" />
                                 </div>
                                 <div className="text-gray-600 text-xs sm:text-sm">Events Delivered</div>
                             </div>

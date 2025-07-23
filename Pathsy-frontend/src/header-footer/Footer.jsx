@@ -15,7 +15,7 @@ const Footer = () => {
               <img src={logo} alt="" />
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Leading Exhibition & Logistics Partner delivering exceptional solutions across India and <br className="hidden md:block"/> globally for over 15 years.
+              Leading Exhibition & Logistics Partner delivering exceptional solutions across India and <br className="hidden md:block"/> globally for over 2+ years.
             </p>
             <div className="flex space-x-3">
               <div className="w-10 h-10 bg-[#004c99] rounded-full text-white hover:text-[#004c99] flex items-center justify-center hover:bg-white transition-colors cursor-pointer">

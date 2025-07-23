@@ -57,8 +57,8 @@ function HelpAndSupport() {
                     </h2>
                     <div className="w-16 sm:w-20 md:w-24 h-1 bg-orange-500 mx-auto mb-4 sm:mb-6"></div>
                     <p className="text-sm sm:text-base md:text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4">
-                        More than a logistics provider — we're your long-term growth partner.<br className="hidden sm:block" />
-                        At Pathsy Logistics, we don't just deliver packages — we deliver precision, partnerships, and peace of mind.
+                        More than a logistics provider  we're your long-term growth partner.<br className="hidden sm:block" />
+                        At Pathsy Logistics, we don't just deliver packages  we deliver precision, partnerships, and peace of mind.
                         Here's why businesses across India and beyond trust us:
                     </p>
                 </div>

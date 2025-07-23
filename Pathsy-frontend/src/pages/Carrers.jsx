@@ -19,13 +19,13 @@ function Careers() {
             </div>
 
             <p className="text-lg text-gray-600 mb-2 leading-relaxed">
-              <span className='font-bold'>Be Part of Something Bigger — Build the Future of Logistics with Us</span> At <span className='font-bold'>Pathsy Logistics Solutions</span>, we’re more than a logistics company 
+              <span className='font-bold'>Be Part of Something Bigger  Build the Future of Logistics with Us</span> At <span className='font-bold'>Pathsy Logistics Solutions</span>, we’re more than a logistics company 
  We're a team of thinkers, doers, planners, and problem-solvers.
             </p>
 
             <p className="text-base text-gray-500 mb-4 leading-relaxed">
              We’re on a mission to reshape how businesses move their goods and ideas across the world.
- If you're passionate about innovation, teamwork, and real impact — you’ll fit right in.
+ If you're passionate about innovation, teamwork, and real impact  you’ll fit right in.
             </p>
 
             <ul className="space-y-4 mb-4">
