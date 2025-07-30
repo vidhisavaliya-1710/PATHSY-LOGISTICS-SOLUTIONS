@@ -1,135 +1,112 @@
 import React from 'react';
-import {
-  Calendar,
-  Truck,
-  Warehouse,
-  Plane,
-  FileText,
-  Users,
-  ArrowRight,
-  UserCog,
-  Globe,
-  ScrollText,
-  TruckIcon,
-  TruckElectric,
-} from 'lucide-react';
+import { Truck, Package, Monitor, BarChart3, Snowflake, Warehouse } from 'lucide-react';
 
 function Services() {
   const services = [
     {
-      id: 1,
-      icon: Plane,
-      title: 'Freight & Cargo Solutions',
-      description: [
-        'Road, Air & Sea Shipping – Flexible options for all cargo needs.',
-        'Bulk & Fragile Shipments – Specialized handling for sensitive goods.',
-      ],
-      link: '#',
+      icon: <Truck className="w-8 h-8 text-white" />,
+      title: "Freight & Cargo Solutions",
+      description: "Road, Air & Sea Shipping with flexible options for every cargo type. Specialized handling for bulk & fragile shipments with real-time tracking.",
+      bgColor: "bg-blue-600",
+      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#26a69a]"
     },
     {
-      id: 2,
-      icon: Warehouse,
-      title: 'Warehousing & Storage',
-      description: [
-        'Secure, Tech-Enabled Warehouses – Automated inventory management.',
-        'Smart Distribution Hubs – Optimized for fast order fulfillment.',
-      ],
-      link: '#',
+      icon: <Package className="w-8 h-8 text-white" />,
+      title: "Tech-Enabled Warehousing",
+      description: "Automated inventory & 24/7 monitoring with smart distribution hubs optimized for rapid order fulfillment and AI-powered operations.",
+      bgColor: "bg-green-600",
+      iconBg: "bg-gradient-to-br from-[#26a69a] to-[#fbc02d]"
     },
     {
-      id: 3,
-      icon: TruckIcon,
-      title: 'Last-Mile Delivery',
-      description: [
-        'Fast, On-Time Deliveries – Powered by route optimization AI.',
-        'Real-Time Customer Updates – SMS/Email notifications for every milestone.',
-      ],
-      link: '#',
+      icon: <Monitor className="w-8 h-8 text-white" />,
+      title: "Exhibition Logistics & Design",
+      description: "Custom booth designs with eye-catching brand-aligned structures. Global event logistics with end-to-end transport, setup & dismantling.",
+      bgColor: "bg-orange-600",
+      iconBg: "bg-gradient-to-br from-[#fbc02d] to-[#d32f2f]"
     },
     {
-      id: 4,
-      icon: Globe,
-      title: 'Supply Chain Management',
-      description: [
-        'End-to-End Visibility – Track shipments from factory to doorstep.',
-        'Data-Driven Insights – Reduce costs & delays with predictive analytics.',
-      ],
-      link: '#',
+      icon: <Truck className="w-8 h-8 text-white" />,
+      title: "AI-Powered Last-Mile",
+      description: "Fast deliveries with route optimization solutions powered by AI. Live tracking with updates via SMS & email notifications for complete transparency.",
+      bgColor: "bg-purple-600",
+      iconBg: "bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]"
     },
     {
-      id: 5,
-      icon: ScrollText,
-      title: 'Reverse Logistics',
-      description: [
-        'Hassle-Free Returns – Efficient systems for returned goods processing.',
-        'Sustainable Disposal – Eco-conscious product disposal and recycling.',
-      ],
-      link: '#',
+      icon: <BarChart3 className="w-8 h-8 text-white" />,
+      title: "Supply Chain Analytics",
+      description: "End-to-end visibility to track & freight factory to delivery. Predictive analytics to reduce operational costs & delays with AI insights.",
+      bgColor: "bg-indigo-600",
+      iconBg: "bg-gradient-to-br from-[#7b1fa2] to-[#0052cc]"
     },
     {
-      id: 6,
-      icon: UserCog,
-      title: 'Cold Chain Logistics',
-      description: [
-        'Temperature-Controlled Transport – For pharmaceuticals, perishables & more.',
-        '24/7 Monitoring – Ensure freshness with real-time temperature tracking.',
-      ],
-      link: '#',
-    },
+      icon: <Snowflake className="w-8 h-8 text-white" />,
+      title: "Cold Chain & Reverse Logistics",
+      description: "Temperature-controlled transport for pharma & perishables with 24/7 monitoring. Seamless returns processing with eco-friendly disposal solutions.",
+      bgColor: "bg-blue-600",
+      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#7b1fa2]"
+    }
   ];
 
   return (
-    <section className="py-16 bg-[#e6f2ff]">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-[36px] md:text-[36px] font-bold text-gray-800 mb-2">
-            Our Services
-          </h2>
-          <div className="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Comprehensive solutions for your exhibition and logistics needs, delivered
-            with precision and excellence across India and globally.
-          </p>
-        </div>
+    <>
+      <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center bg-[#0052cc] text-white px-5 py-2 rounded-full text-sm font-medium mb-6">
+              Our Expertise
+            </div>
+            <h1 className="text-4xl md:text-5xl  font-bold text-gray-900 mb-6">
+              Comprehensive Logistics <span className="text-[#0052cc]">Solutions</span>
+            </h1>
+            <p className="text-xl md:text-xl text-[#777777] max-w-3xl mx-auto leading-relaxed">
+              From global freight forwarding to specialized exhibition management, we deliver end-to-end logistics solutions tailored to your business needs.
+            </p>
+          </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => {
-            const IconComponent = service.icon;
-            return (
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            {services.map((service, index) => (
               <div
-                key={service.id}
-                className="bg-white text-center rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-8 group"
+                key={index}
+                className="bg-white border border-gray-200 rounded-2xl shadow-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 group  group-hover:border-blue-600"
               >
-                {/* Top Icon */}
-                <div className="mb-3 flex justify-center">
-                  <div className="w-14 h-14 bg-[#004c99] rounded-full flex items-center justify-center transition duration-300">
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
+                {/* Icon */}
+                <div className={`inline-flex items-center justify-center w-16 h-16 ${service.iconBg} rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  {service.icon}
                 </div>
 
-                {/* Title with icon */}
-                <h3 className="text-lg font-semibold text-[#004c99] mb-3 flex items-center justify-center gap-2">
-                  {/* <IconComponent className="w-5 h-5 text-[#004c99]" /> */}
+                {/* Content */}
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#0052cc] transition-colors duration-300">
                   {service.title}
                 </h3>
 
-                {/* Description Points with icon */}
-                <ul className="text-gray-600 text-sm text-left leading-relaxed space-y-2 mt-3">
-                  {service.description.map((point, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <IconComponent className="w-4 h-4 mt-1 text-[#004c99]" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  {service.description}
+                </p>
+
+                {/* Learn More Button */}
+                <button className="inline-flex items-center text-[#0052cc] font-semibold hover:text-[#0052cc] transition-colors duration-300 group/btn">
+                  Learn More
+                  <svg
+                    className="ml-2 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300 "
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
-            );
-          })}
+            ))}
+          </div>
+
+          {/* Bottom CTA Section */}
+
         </div>
       </div>
-    </section>
+
+    </>
   );
 }
 
