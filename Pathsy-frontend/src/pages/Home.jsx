@@ -6,6 +6,7 @@ import Services from './Services';
 import WhoWeAre from './WhoWeAre';
 import Exhibition from '../assets/images/exhibition.png'
 import { FaDraft2Digital } from 'react-icons/fa';
+import WhyChoose from './WhyChoose';
 
 export default function LogisticsHero() {
   return (
@@ -213,6 +214,7 @@ export default function LogisticsHero() {
         </div>
       </div>
     </div>
+    <WhyChoose/>
     </>
   );
 }
