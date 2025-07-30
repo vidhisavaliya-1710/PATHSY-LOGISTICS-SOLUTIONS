@@ -6,6 +6,7 @@ import Services from './Services';
 import WhoWeAre from './WhoWeAre';
 import Exhibition from '../assets/images/exhibition.png'
 import { FaDraft2Digital, FaDraftingCompass, FaHeadphonesAlt, FaTools, FaTruck } from 'react-icons/fa';
+import WhyChoose from './WhyChoose';
 import { Brain, Shield, Bot, Check, Play } from 'lucide-react';
 
 export default function LogisticsHero() {
@@ -207,6 +208,7 @@ export default function LogisticsHero() {
         </div>
       </div>
     </div>
+    <WhyChoose/>
 
     <div className="bg-gradient-to-b from-gray-50 to-white py-12 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
