@@ -5,7 +5,8 @@ import { Truck, Package, Settings, Headphones, ArrowRight, ExternalLink } from '
 import Services from './Services';
 import WhoWeAre from './WhoWeAre';
 import Exhibition from '../assets/images/exhibition.png'
-import { FaDraft2Digital } from 'react-icons/fa';
+import { FaDraft2Digital, FaDraftingCompass } from 'react-icons/fa';
+import { Brain, Shield, Bot, Check, Play } from 'lucide-react';
 
 export default function LogisticsHero() {
   return (
@@ -78,8 +79,8 @@ export default function LogisticsHero() {
     <WhoWeAre/>
 
 
-     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+     <div className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
           {/* Badge */}
@@ -112,7 +113,7 @@ export default function LogisticsHero() {
               {/* Stand Design & Build */}
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-[#0052cc] rounded-full flex items-center justify-center flex-shrink-0">
-                  <FaDraft2Digital/>
+                  <FaDraftingCompass className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">Stand Design & Build</h4>
@@ -166,13 +167,7 @@ export default function LogisticsHero() {
               </div>
             </div>
 
-            {/* View Services Button */}
-            <div className="mt-8">
-              <button className="inline-flex items-center px-6 py-3 bg-[#0052cc] text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
-                View Exhibition Services 
-                <ExternalLink className="ml-2 w-4 h-4" />
-              </button>
-            </div>
+            
           </div>
 
           {/* Right Side - Exhibition Image and Stats */}
@@ -210,6 +205,206 @@ export default function LogisticsHero() {
               View Portfolio
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          {/* Badge */}
+          <div className="inline-block mb-6">
+            <span className="px-4 py-2 bg-gradient-to-r from-[#26a69a] to-[#fbc02d] text-white text-sm font-medium rounded-full">
+              Technology That Moves You Forward
+            </span>
+          </div>
+          
+          {/* Main Title */}
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Powered by <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#26a69a] to-[#fbc02d]">AI IoT & Blockchain</span>
+          </h2>
+          
+          {/* Subtitle */}
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            We use cutting-edge technology to deliver precision, security, and speed in every 
+            logistics operation and exhibition project.
+          </p>
+        </div>
+
+        {/* Technology Cards Grid */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {/* AI-Powered Intelligence */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+            <div className="w-15 h-15 bg-gradient-to-br from-[#0052cc] to-[#26a69a] rounded-xl flex items-center justify-center mb-6">
+              <Brain className="w-7 h-7 text-white" />
+            </div>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-6">AI-Powered Intelligence</h3>
+            
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Automated Route Optimization</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Predictive Analytics</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Smart Inventory Management</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Lower Costs, Faster Deliveries</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Blockchain Security */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+            <div className="w-15 h-15 bg-gradient-to-br from-[#26a69a] to-[#fbc02d] rounded-xl flex items-center justify-center mb-6">
+              <Shield className="w-7 h-7 text-white" />
+            </div>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-6">Blockchain Security</h3>
+            
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Tamper Proof Documentation</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Risk-Free Trade Operations</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Complete Transaction Transparency</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Secure Data Management</span>
+              </div>
+            </div>
+          </div>
+
+          {/* IoT & Robotics */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+            <div className="w-15 h-15 bg-gradient-to-br from-[#fbc02d] to-[#d32f2f] rounded-xl flex items-center justify-center mb-6">
+              <Bot className="w-7 h-7 text-white" />
+            </div>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-6">IoT & Robotics</h3>
+            
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Warehouse Automation</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Event Robotics Setup</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Real-Time Monitoring</span>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-white" />
+                </div>
+                <span className="text-gray-700">Unmatched Accuracy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Statistics Cards */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+            <div className="text-4xl font-bold text-[#0052cc] mb-2">95%</div>
+            <div className="text-gray-600 text-sm">Route Efficiency</div>
+          </div>
+          
+          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+            <div className="text-4xl font-bold text-[#0052cc] mb-2">100%</div>
+            <div className="text-gray-600 text-sm">Secure Transactions</div>
+          </div>
+          
+          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+            <div className="text-4xl font-bold text-[#0052cc] mb-2">24/7</div>
+            <div className="text-gray-600 text-sm">Smart Monitoring</div>
+          </div>
+          
+          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+            <div className="text-4xl font-bold text-[#0052cc] mb-2">AI</div>
+            <div className="text-gray-600 text-sm">Driven Operations</div>
+          </div>
+        </div>
+
+        {/* Call to Action Section */}
+        <div className="relative overflow-hidden rounded-3xl">
+          {/* Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0052cc] via-[#26a69a] to-[#fbc02d]"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 px-8 py-12 lg:px-16 lg:py-16 text-center text-white">
+            <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+              Ready to Redefine Logistics & Exhibitions?
+            </h3>
+            <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+              Let Pathsy be the engine behind your next breakthrough. Experience 
+              the future of smart logistics today.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="inline-flex items-center px-8 py-3 bg-white text-[#0052cc] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                Get Started Today
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
+              <button className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0052cc] transition-colors">
+                Explore Technology
+                <Play className="ml-2 w-4 h-4" />
+              </button>
+            </div>
+          </div>
+          
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
         </div>
       </div>
     </div>
