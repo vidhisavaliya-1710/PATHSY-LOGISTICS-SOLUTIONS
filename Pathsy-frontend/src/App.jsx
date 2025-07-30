@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './header-footer/Navbar'
 import AllRoutes from './AllRoutes'
-import Footer from './header-footer/footer'
+import Footer from './header-footer/Footer'
 
 // Loader Component with Tailwind CSS
 const Loader = () => {
