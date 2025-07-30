@@ -16,7 +16,7 @@ function AllRoutes() {
                 {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
                 <Route path="/services" element={<Services />} />
                 <Route path="/whoWeAre" element={<WhoWeAre/>}/>
-                {/* <Route path="/careers" element={<Carrers />} /> */}
+                <Route path="/careers" element={<Carrers />} />
                 {/* <Route path="/contact" element={<Contact />} /> */}
                 {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
 
