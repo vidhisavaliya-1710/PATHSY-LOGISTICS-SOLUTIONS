@@ -75,9 +75,7 @@ export default function LogisticsHero() {
                     </button>
                 </div>
             </div>
-
-            
-        </div>
+            </div>
 
     );
 }
