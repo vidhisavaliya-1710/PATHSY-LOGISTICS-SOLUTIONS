@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Target, Eye, Calendar, MapPin, Headphones } from 'lucide-react';
-import Aboutus from '../assets/images/Aboutus.avif'
+// import Aboutus from '../assets/images/Aboutus.avif'
 
 
 const CountUp = ({ end, duration = 2000, suffix = '' }) => {

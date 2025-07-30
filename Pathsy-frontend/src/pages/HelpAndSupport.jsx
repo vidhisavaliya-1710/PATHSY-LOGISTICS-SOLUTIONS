@@ -1,6 +1,6 @@
 import React from 'react';
 import { Network, Clock, Headphones, Shield, Phone, ExternalLink } from 'lucide-react';
-import helpAndsupport from "../assets/images/helpandsupport.png"
+// import helpAndsupport from "../assets/images/helpandsupport.png"
 import { Link } from 'react-router-dom';
 
 

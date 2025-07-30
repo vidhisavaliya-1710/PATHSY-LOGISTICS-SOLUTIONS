@@ -12,11 +12,11 @@ function AllRoutes() {
         <>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/aboutUs" element={<AboutUs />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/careers" element={<Carrers />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/helpAndSupport" element={<HelpAndSupport/>}/>
+                {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
+                {/* <Route path="/services" element={<Services />} /> */}
+                {/* <Route path="/careers" element={<Carrers />} /> */}
+                {/* <Route path="/contact" element={<Contact />} /> */}
+                {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
 
 
             </Routes>

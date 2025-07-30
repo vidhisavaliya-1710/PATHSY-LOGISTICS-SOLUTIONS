@@ -1,7 +1,7 @@
 import React from 'react';
-import team1 from '../assets/images/team1.jpg';
-import team2 from '../assets/images/team2.jpg';
-import team3 from '../assets/images/team3.jpg';
+// import team1 from '../assets/images/team1.jpg';
+// import team2 from '../assets/images/team2.jpg';
+// import team3 from '../assets/images/team3.jpg';
 import { Briefcase, BriefcaseBusiness } from 'lucide-react';
 
 function Careers() {
