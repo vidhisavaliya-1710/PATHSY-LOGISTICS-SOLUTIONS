@@ -1,9 +1,12 @@
 import React from 'react';
 import homeBanner from '../assets/images/homeBanner.png';
 import { Quote, HandCoins } from 'lucide-react';
+import Services from './Services';
+import WhoWeAre from './WhoWeAre';
 
 export default function LogisticsHero() {
   return (
+        <>
     <div className="relative w-full min-h-screen overflow-hidden">
       {/* Background Image */}
       <img
