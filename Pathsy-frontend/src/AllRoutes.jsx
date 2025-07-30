@@ -19,7 +19,7 @@ function AllRoutes() {
                 <Route path="/whoWeAre" element={<WhoWeAre/>}/>
                 <Route path="/whyChoose" element={<WhyChoose/>}/>
                 {/* <Route path="/careers" element={<Carrers />} /> */}
-                {/* <Route path="/contact" element={<Contact />} /> */}
+                <Route path="/contact" element={<Contact />} />
                 {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
 
 
