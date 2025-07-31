@@ -57,16 +57,16 @@ function Navbar() {
                                 }`}></span>
                             </Link>
                             <Link 
-                                to="/aboutUs" 
+                                to="/whoWeAre" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
-                                    isActive('/aboutUs') 
+                                    isActive('/whoWeAre') 
                                         ? 'text-[#004c99]' 
                                         : 'text-gray-700 hover:text-[#004c99]'
                                 }`}
                             >
                                 Who We Are
                                 <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
-                                    isActive('/aboutUs') ? 'w-full' : 'w-0 group-hover:w-full'
+                                    isActive('/whoWeAre') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link>
                             <Link 
@@ -152,17 +152,17 @@ function Navbar() {
                             }`}></span>
                         </Link>
                         <Link 
-                            to="/aboutUs" 
+                            to="/whoWeAre" 
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
-                                isActive('/aboutUs') 
+                                isActive('/whoWeAre') 
                                     ? 'text-[#004c99] bg-gray-50' 
                                     : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
                             }`}
                         >
                             Who We Are
                             <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
-                                isActive('/aboutUs') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
+                                isActive('/whoWeAre') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link>
                         <Link 

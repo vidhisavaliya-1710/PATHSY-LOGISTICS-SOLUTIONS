@@ -210,7 +210,7 @@ function Careers() {
         </div>
 
         {/* What We Offer Section */}
-        <div className="mb-12 md:mb-16">
+        <div className="">
           <div className="bg-gradient-to-r from-[#0052cc] to-[#26a69a] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-10">
             <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 md:mb-12">What We Offer</h3>
             
