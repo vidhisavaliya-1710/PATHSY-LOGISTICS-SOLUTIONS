@@ -76,7 +76,7 @@ function WhoWeAre() {
                             </div>
 
                             {/* Mission Statement */}
-                            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-gray-500">
+                            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
                                 <p className="text-gray-300 leading-relaxed">
                                     We are committed to innovation, technology-driven operations, and eco-friendly practices,
                                     ensuring businesses thrive in today's competitive market.
@@ -99,28 +99,28 @@ function WhoWeAre() {
                         {/* Right Column - Stats */}
                         <div className="grid grid-cols-2 gap-6 lg:gap-y-6 lg:gap-x-0">
                             {/* Years Experience */}
-                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6   min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-gray-500 text-center">
+                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6   min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-white/20 text-center">
 
                                 <div className="text-3xl lg:text-4xl  font-bold text-yellow-400 mb-2">2+</div>
                                 <div className="text-gray-300 font-medium">Years Excellence</div>
                             </div>
 
                             {/* AI Powered */}
-                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6  min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-gray-500 text-center">
+                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6  min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-white/20 text-center">
 
                                 <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">AI</div>
                                 <div className="text-gray-300 font-medium">Powered Systems</div>
                             </div>
 
                             {/* Live Tracking */}
-                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6  min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-gray-500 text-center">
+                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6  min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-white/20 text-center">
 
                                 <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">24/7</div>
                                 <div className="text-gray-300 font-medium">Live Tracking</div>
                             </div>
 
                             {/* Transparency */}
-                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6  min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-gray-500 text-center">
+                            <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6  min-w-[140px] max-w-[250px] flex-1 rounded-xl  border border-white/20 text-center">
 
                                 <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">100%</div>
                                 <div className="text-gray-300 font-medium">Transparency</div>
