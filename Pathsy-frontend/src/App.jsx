@@ -9,8 +9,8 @@ const Loader = () => {
   return (
     <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
       <div className="text-center">
-        <div className="w-20 h-20 bg-[#FF8904]/30 rounded-full flex items-center justify-center animate-pulse mb-4 mx-auto">
-          <div className="w-12 h-12 bg-[#FF8904] rounded-full animate-ping"></div>
+        <div className="w-20 h-20 bg-gradient-to-br from-[#fbc02d] to-[#26a69a] rounded-full flex items-center justify-center animate-pulse mb-4 mx-auto">
+          <div className="w-12 h-12 bg-gradient-to-br from-[#0052cc] to-[#26a69a] rounded-full animate-ping"></div>
         </div>
         <p className="text-black text-lg font-medium">Loading...</p>
       </div>
@@ -51,7 +51,7 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-[#FF8904] hover:bg-[#FF8904]/80 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 z-40"
+          className="fixed bottom-6 right-6 bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2] hover:bg-[#FF8904]/80 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 z-40"
           aria-label="Scroll to top"
         >
           <svg
