@@ -210,11 +210,11 @@ function ExhibitionLogisticsDesign() {
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
                         <button className="bg-gradient-to-r from-[#d32f2f] to-[#7b1fa2]  text-white px-6 py-3 rounded-xl font-semibold transition">
-                             Get Your Exhibition Plan Today!
+                            Get Your Exhibition Plan Today!
                         </button>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>

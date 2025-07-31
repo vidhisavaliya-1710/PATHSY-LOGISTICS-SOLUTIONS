@@ -2,63 +2,63 @@ import React from 'react';
 import { FaPlane, FaShip, FaTruck, FaFileAlt, FaHome, FaWarehouse } from "react-icons/fa";
 import { FiClock, FiDollarSign, FiGlobe, FiShield, FiPackage, FiBox } from "react-icons/fi";
 
-function FreightCargoSolutions() {
-  const services = [
-    {
-      title: "Air Freight",
-      description:
-        "Fast, priority shipping for urgent deliveries. Get your cargo delivered quickly with our premium air freight services.",
-      icon: <FaPlane className="text-white w-5 h-5" />,
-      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#26a69a]",
-      tagIcon: <FiClock className="w-4 h-4 mr-1" />,
-      tagText: "24-48 Hour Delivery",
-    },
-    {
-      title: "Sea Freight",
-      description:
-        "Cost-effective solutions for bulk cargo. Perfect for large shipments with flexible delivery timelines.",
-      icon: <FaShip className="text-white w-5 h-5" />,
-      iconBg: "bg-gradient-to-br from-[#26a69a] to-[#fbc02d]",
-      tagIcon: <FiDollarSign className="w-4 h-4 mr-1" />,
-      tagText: "Best Value Option",
-    },
-    {
-      title: "Road Transport",
-      description:
-        "Secure and efficient regional delivery. Reliable ground transportation for domestic and cross-border shipments.",
-      icon: <FaTruck className="text-white w-5 h-5" />,
-      iconBg: "bg-gradient-to-br from-[#fbc02d] to-[#d32f2f]",
-      tagIcon: <FiGlobe className="w-4 h-4 mr-1" />,
-      tagText: "Regional Coverage",
-    },
-    {
-      title: "Customs & Documentation",
-      description:
-        "Smooth clearance at every port. Our experts handle all paperwork and customs procedures for you.",
-      icon: <FaFileAlt className="text-white w-5 h-5" />,
-      iconBg: "bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]",
-      tagIcon: <FiShield className="w-4 h-4 mr-1" />,
-      tagText: "Compliance Guaranteed",
-    },
-    {
-      title: "Door-to-Door Service",
-      description:
-        "End-to-end shipping convenience. Complete logistics solution from pickup to final delivery at your destination.",
-      icon: <FaHome className="text-white w-5 h-5" />,
-      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#d32f2f]",
-      tagIcon: <FiPackage className="w-4 h-4 mr-1" />,
-      tagText: "Full Service",
-    },
-    {
-      title: "Warehousing & Distribution",
-      description:
-        "Safe storage with seamless dispatch. We manage inventory with care and ensure efficient distribution to your destinations.",
-      icon: <FaWarehouse className="text-white w-5 h-5" />,
-      iconBg: "bg-gradient-to-br from-[#7b1fa2] to-[#0052cc]",
-      tagIcon: <FiBox className="w-4 h-4 mr-1" />,
-      tagText: "Inventory Managed",
-    },
-  ];
+  function FreightCargoSolutions() {
+    const services = [
+      {
+        title: "Air Freight",
+        description:
+          "Fast, priority shipping for urgent deliveries. Get your cargo delivered quickly with our premium air freight services.",
+        icon: <FaPlane className="text-white w-5 h-5" />,
+        iconBg: "bg-gradient-to-br from-[#0052cc] to-[#26a69a]",
+        tagIcon: <FiClock className="w-4 h-4 mr-1" />,
+        tagText: "24-48 Hour Delivery",
+      },
+      {
+        title: "Sea Freight",
+        description:
+          "Cost-effective solutions for bulk cargo. Perfect for large shipments with flexible delivery timelines.",
+        icon: <FaShip className="text-white w-5 h-5" />,
+        iconBg: "bg-gradient-to-br from-[#26a69a] to-[#fbc02d]",
+        tagIcon: <FiDollarSign className="w-4 h-4 mr-1" />,
+        tagText: "Best Value Option",
+      },
+      {
+        title: "Road Transport",
+        description:
+          "Secure and efficient regional delivery. Reliable ground transportation for domestic and cross-border shipments.",
+        icon: <FaTruck className="text-white w-5 h-5" />,
+        iconBg: "bg-gradient-to-br from-[#fbc02d] to-[#d32f2f]",
+        tagIcon: <FiGlobe className="w-4 h-4 mr-1" />,
+        tagText: "Regional Coverage",
+      },
+      {
+        title: "Customs & Documentation",
+        description:
+          "Smooth clearance at every port. Our experts handle all paperwork and customs procedures for you.",
+        icon: <FaFileAlt className="text-white w-5 h-5" />,
+        iconBg: "bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]",
+        tagIcon: <FiShield className="w-4 h-4 mr-1" />,
+        tagText: "Compliance Guaranteed",
+      },
+      {
+        title: "Door-to-Door Service",
+        description:
+          "End-to-end shipping convenience. Complete logistics solution from pickup to final delivery at your destination.",
+        icon: <FaHome className="text-white w-5 h-5" />,
+        iconBg: "bg-gradient-to-br from-[#0052cc] to-[#d32f2f]",
+        tagIcon: <FiPackage className="w-4 h-4 mr-1" />,
+        tagText: "Full Service",
+      },
+      {
+        title: "Warehousing & Distribution",
+        description:
+          "Safe storage with seamless dispatch. We manage inventory with care and ensure efficient distribution to your destinations.",
+        icon: <FaWarehouse className="text-white w-5 h-5" />,
+        iconBg: "bg-gradient-to-br from-[#7b1fa2] to-[#0052cc]",
+        tagIcon: <FiBox className="w-4 h-4 mr-1" />,
+        tagText: "Inventory Managed",
+      },
+    ];
 
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-16 bg-blue-50">
