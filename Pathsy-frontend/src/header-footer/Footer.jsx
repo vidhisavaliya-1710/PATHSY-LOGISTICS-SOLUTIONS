@@ -63,6 +63,7 @@ const Footer = () => {
     <li><Link to='/services' className="hover:text-white">Our Services</Link></li>
     <li><Link to='/careers' className="hover:text-white">Careers</Link></li>
     <li><Link to='/contact' className="hover:text-white">Contact Us</Link></li>
+    <li><Link to='/whyChoose' className="hover:text-white">why Choose</Link></li>
   </ul>
 </div>
 
@@ -71,18 +72,18 @@ const Footer = () => {
           <div className="text-left">
             <h4 className="text-yellow-500 font-semibold mb-4 text-lg">Our Services</h4>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li><a href="#" className="hover:text-white block transition-colors">Freight & Shipping</a></li>
-              <li><a href="#" className="hover:text-white block transition-colors">Tech-Enabled Warehousing</a></li>
-              <li><a href="#" className="hover:text-white block transition-colors">Exhibition Logistics & Design</a></li>
-              <li><a href="#" className="hover:text-white block transition-colors">AI-Powered Last-Mile</a></li>
-              <li><a href="#" className="hover:text-white block transition-colors">Supply Chain Analytics</a></li>
-              <li><a href="#" className="hover:text-white block transition-colors">Cold Chain & Reverse Logistics</a></li>
+              <li><Link to='/services/Freight&CargoSolutions' className="hover:text-white block transition-colors">Freight & Shipping</Link></li>
+              <li><Link to='/services/techEnabledWarehousing' className="hover:text-white block transition-colors">Tech-Enabled Warehousing</Link></li>
+              <li><Link to='/serices/exhibitionLogisticsDesign' className="hover:text-white block transition-colors">Exhibition Logistics & Design</Link></li>
+              <li><Link to='/services/AIPoweredLastMile' className="hover:text-white block transition-colors">AI-Powered Last-Mile</Link></li>
+              <li><Link to='/services/supplyChainAnalytic' className="hover:text-white block transition-colors">Supply Chain Analytics</Link></li>
+              <li><Link to='services/ColdChain&ReverseLogistics' className="hover:text-white block transition-colors">Cold Chain & Reverse Logistics</Link></li>
             </ul>
           </div>
         </div>
 
         {/* Row 2: Stay Updated */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row gap-6 md:gap-12">
+        {/* <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row gap-6 md:gap-12">
           <div className="md:w-1/3">
             <h3 className="text-yellow-500 font-semibold mb-2 text-xl">Stay Updated</h3>
             <p className="text-sm text-gray-300">
@@ -99,7 +100,7 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Row 3: Socials & CTA */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-8">
