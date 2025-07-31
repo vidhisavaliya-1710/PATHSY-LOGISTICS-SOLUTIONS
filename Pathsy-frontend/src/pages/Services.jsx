@@ -48,7 +48,8 @@ function Services() {
       title: "Cold Chain & Reverse Logistics",
       description: "Temperature-controlled transport for pharma & perishables with 24/7 monitoring. Seamless returns processing with eco-friendly disposal solutions.",
       bgColor: "bg-blue-600",
-      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#7b1fa2]"
+      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#7b1fa2]",
+      link:"/services/ColdChain&ReverseLogistics"
     }
   ];
 
