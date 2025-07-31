@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Facebook, Linkedin, Twitter, Youtube, Instagram, MapPin, Phone, Mail
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -56,12 +57,12 @@ const Footer = () => {
           <div className="text-left ms-[0px] sm:ms-0 md:ms-[110px]">
   <h4 className="text-yellow-500 font-semibold mb-4">Quick Links</h4>
   <ul className="space-y-3 text-sm text-gray-300">
-    <li><a href="#" className="hover:text-white">Home</a></li>
-    <li><a href="#" className="hover:text-white">About Us</a></li>
-    <li><a href="#" className="hover:text-white">Who We Are</a></li>
-    <li><a href="#" className="hover:text-white">Our Services</a></li>
-    <li><a href="#" className="hover:text-white">Careers</a></li>
-    <li><a href="#" className="hover:text-white">Contact Us</a></li>
+    <li><Link to='/' className="hover:text-white">Home</Link></li>
+    {/* <li><Link to='/' className="hover:text-white">About Us</Link></li> */}
+    <li><Link to='/whoWeAre' className="hover:text-white">Who We Are</Link></li>
+    <li><Link to='/services' className="hover:text-white">Our Services</Link></li>
+    <li><Link to='/careers' className="hover:text-white">Careers</Link></li>
+    <li><Link to='/contact' className="hover:text-white">Contact Us</Link></li>
   </ul>
 </div>
 

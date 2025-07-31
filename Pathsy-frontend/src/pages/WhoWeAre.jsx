@@ -1,10 +1,14 @@
 import React from 'react';
 import { CheckCircle, Award, Zap,  Clock, Eye, Brain, Shield, ArrowRight } from 'lucide-react';
 import { Globe, PenTool, Bot } from 'lucide-react'; // Add these at the top
-import whoweare from "../assets/images/whoweare.png"
+import whoweare from "../assets/images/whoweare.png";
+import Exhibition from '../assets/images/exhibition.png'
+import { FaDraft2Digital, FaDraftingCompass, FaHeadphonesAlt, FaTools, FaTruck } from 'react-icons/fa';
 
 function WhoWeAre() {
     return (
+        <>
+        
         <div className="relative min-h-screen overflow-hidden flex items-center justify-center">
             {/* Background Image with Overlay */}
             <div
@@ -131,6 +135,143 @@ function WhoWeAre() {
             </div>
 
         </div>
+
+         <div className="bg-blue-50 py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-6xl mx-auto">
+                {/* Header Section */}
+                <div className="text-center mb-10 md:mb-16">
+                  {/* Badge */}
+                  <div className="inline-block mb-4 md:mb-6">
+                    <span className="px-4 py-2 bg-[#26a69a] text-white text-sm md:text-base font-medium rounded-full">
+                      Exhibition Excellence
+                    </span>
+                  </div>
+                  
+                  {/* Main Title */}
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    Premier Exhibition <span className="text-[#0052cc] block md:inline">Management Services</span>
+                  </h2>
+                  
+                  {/* Subtitle */}
+                  <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+                    From concept to completion, we handle every aspect of your exhibition presence 
+                    with precision, creativity, and professional excellence.
+                  </p>
+                </div>
+        
+                {/* Main Content Area */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
+                  {/* Left Side - Services List */}
+                  <div className="order-2 lg:order-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8">Complete Exhibition Solutions</h3>
+                    
+                    {/* Service Items */}
+                    <div className="space-y-5 md:space-y-6">
+                      {/* Stand Design & Build */}
+                      <div className="flex items-start space-x-3 md:space-x-4">
+                        <div className="w-8 h-8 bg-[#0052cc] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                          <FaDraftingCompass className="w-4 h-4 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">Stand Design & Build</h4>
+                          <p className="text-gray-600 text-sm md:text-base">
+                            Custom exhibition stand design and construction that captures your brand essence and 
+                            maximizes visitor engagement.
+                          </p>
+                        </div>
+                      </div>
+        
+                      {/* Logistics & Transportation */}
+                      <div className="flex items-start space-x-3 md:space-x-4">
+                        <div className="w-8 h-8 bg-[#26a69a] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                          <FaTruck className="w-4 h-4 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">Logistics & Transportation</h4>
+                          <p className="text-gray-600 text-sm md:text-base">
+                            Seamless transportation of exhibition materials, booth components, and merchandise to 
+                            venues worldwide.
+                          </p>
+                        </div>
+                      </div>
+        
+                      {/* Setup & Installation */}
+                      <div className="flex items-start space-x-3 md:space-x-4">
+                        <div className="w-8 h-8 bg-[#fbc02d] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                          <FaTools className="w-4 h-4 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">Setup & Installation</h4>
+                          <p className="text-gray-600 text-sm md:text-base">
+                            Professional on-site setup, installation, and dismantling services with experienced 
+                            technical teams.
+                          </p>
+                        </div>
+                      </div>
+        
+                      {/* Event Support */}
+                      <div className="flex items-start space-x-3 md:space-x-4">
+                        <div className="w-8 h-8 bg-[#f44336] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                          <FaHeadphonesAlt className="w-4 h-4 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">Event Support</h4>
+                          <p className="text-gray-600 text-sm md:text-base">
+                            Dedicated on-site support throughout your event to ensure smooth operations and 
+                            immediate issue resolution.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  {/* Right Side - Exhibition Image and Stats */}
+                  <div className="relative order-1 lg:order-2">
+                    {/* Main Exhibition Image */}
+                    {/* <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-72 md:h-96 lg:h-[450px] flex items-center justify-center text-gray-500">
+                      Exhibition Image
+                    </div> */}
+                    <img 
+          src={Exhibition} 
+          alt="" 
+          className=" h-[400px] w-[700px] rounded-2xl"
+        />
+        
+                      
+                    {/* Stats Overlays */}
+                    <div className="absolute -top-4 -right-2 md:-top-3 md:-right-2 bg-white rounded-lg p-3 md:p-4 shadow-lg z-10">
+                      <div className="text-2xl md:text-3xl font-bold text-[#26a69a]">200+</div>
+                      <div className="text-xs md:text-sm text-gray-600">Exhibitions</div>
+                    </div>
+                    
+                    <div className="absolute bottom-4 -left-2 md:bottom-6 md:left-1 bg-white rounded-lg p-3 md:p-4 shadow-lg z-10">
+                      <div className="text-2xl md:text-3xl font-bold text-[#26a69a]">30+</div>
+                      <div className="text-xs md:text-sm text-gray-600">Countries</div>
+                    </div>
+                  </div>
+                </div>
+        
+                {/* Call to Action Section */}
+                <div className="mt-12 md:mt-16 bg-gradient-to-r from-[#0052cc] to-[#26a69a] rounded-xl md:rounded-2xl p-6 md:p-8 lg:p-10 text-center text-white">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Ready to Make Your Mark?</h3>
+                  <p className="text-base md:text-lg mb-6 md:mb-8 opacity-90 max-w-2xl mx-auto">
+                    Let us help you create an unforgettable exhibition experience that drives results.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                    <button className="px-6 py-2 md:px-8 md:py-3 bg-white text-[#0052cc] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                      Start Your Project
+                    </button>
+                    <button className="px-6 py-2 md:px-8 md:py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0052cc] transition-colors">
+                      View Portfolio
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </>
+
+        
     );
 }
 
