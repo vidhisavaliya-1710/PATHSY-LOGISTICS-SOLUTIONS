@@ -10,6 +10,7 @@ import WhyChoose from './WhyChoose';
 import { Brain, Shield, Bot, Check, Play } from 'lucide-react';
 import Careers from './Carrers';
 import { Link } from 'react-router-dom';
+import Contact from './Contact';
 
 export default function LogisticsHero() {
   return (
@@ -219,6 +220,7 @@ export default function LogisticsHero() {
 
     <WhyChoose/>
     <Careers/>
+    <Contact/>
 
     
     </>
