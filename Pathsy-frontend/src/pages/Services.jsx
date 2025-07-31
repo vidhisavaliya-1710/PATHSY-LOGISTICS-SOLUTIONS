@@ -1,6 +1,7 @@
 import React from 'react';
 import { Truck, Package, Monitor, BarChart3, Snowflake, Warehouse } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Services() {
   const services = [
@@ -16,14 +17,16 @@ function Services() {
       title: "Tech-Enabled Warehousing",
       description: "Automated inventory & 24/7 monitoring with smart distribution hubs optimized for rapid order fulfillment and AI-powered operations.",
       bgColor: "bg-green-600",
-      iconBg: "bg-gradient-to-br from-[#26a69a] to-[#fbc02d]"
+      iconBg: "bg-gradient-to-br from-[#26a69a] to-[#fbc02d]",
+      link:"/services/techEnabledWarehousing"
     },
     {
       icon: <Monitor className="w-8 h-8 text-white" />,
       title: "Exhibition Logistics & Design",
       description: "Custom booth designs with eye-catching brand-aligned structures. Global event logistics with end-to-end transport, setup & dismantling.",
       bgColor: "bg-orange-600",
-      iconBg: "bg-gradient-to-br from-[#fbc02d] to-[#d32f2f]"
+      iconBg: "bg-gradient-to-br from-[#fbc02d] to-[#d32f2f]",
+      link:"serices/exhibitionLogisticsDesign"
     },
     {
       icon: <Truck className="w-8 h-8 text-white" />,
@@ -89,7 +92,7 @@ function Services() {
                 {/* Learn More Button */}
                 <Link to='/services/Freight&CargoSolutions'>
                 
-                <button className="inline-flex items-center text-[#0052cc] font-semibold hover:text-[#0052cc] transition-colors duration-300 group/btn">
+                <Link to={service.link} className="inline-flex items-center text-[#0052cc] font-semibold hover:text-[#0052cc] transition-colors duration-300 group/btn">
                   Learn More
                   <svg
                     className="ml-2 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300 "
@@ -99,7 +102,7 @@ function Services() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </button>
+                </Link>
                 </Link>
               </div>
             ))}
