@@ -9,6 +9,7 @@ import HelpAndSupport from './pages/HelpAndSupport'
 import WhoWeAre from './pages/WhoWeAre'
 import WhyChoose from './pages/WhyChoose'
 import FreightCargoSolutions from './pages/Services/FreightCargoSolutions'
+import AIPoweredLastMile from './pages/Services/AIPoweredLastMile'
 
 function AllRoutes() {
     return (
@@ -23,6 +24,7 @@ function AllRoutes() {
                 <Route path="/contact" element={<Contact />} />
                 {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
                 <Route path='/services/Freight&CargoSolutions' element={<FreightCargoSolutions/>}/>
+                <Route path='/services/AIPoweredLastMile' element={<AIPoweredLastMile/>}/>
 
 
             </Routes>
