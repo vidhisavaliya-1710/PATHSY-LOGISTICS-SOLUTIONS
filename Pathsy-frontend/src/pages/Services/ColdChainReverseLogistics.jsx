@@ -117,38 +117,37 @@ function ColdChainReverseLogistics() {
             </div>
 
             {/* Reverse Logistics */}
-            <div className="bg-white rounded-2xl shadow-md p-8">
-              <div className='text-center mb-7'>
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#0052cc] to-[#26a69a] mb-4">
-                  <FaRecycle className="text-white w-6 h-6" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Reverse Logistics</h3>
+            <div className="bg-white rounded-2xl shadow-md p-4 sm:p-6 md:p-8">
+              <div className='text-center mb-5 sm:mb-7'>
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#0052cc] to-[#26a69a] mb-3 sm:mb-4">
+                    <FaRecycle className="text-white w-5 h-5 sm:w-6 sm:h-6" />
+                  </div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">Reverse Logistics</h3>
               </div>
-              <div className="space-y-4 mb-6">
+              <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6">
                 {reverseLogisticsServices.map((item, index) => (
-                  <div key={index} className="flex gap-4 items-center">
-                    <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-[#0052cc] to-[#26a69a] rounded-lg">
-                      {item.icon}
-                    </div>
-
+                  <div key={index} className="flex gap-3 sm:gap-4 items-start sm:items-center">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-[#0052cc] to-[#26a69a] rounded-lg">
+                                {item.icon}
+                              </div>
                     <div>
-                      <h4 className="font-semibold text-gray-800">{item.title}</h4>
-                      <p className="text-[#777777] text-sm">{item.description}</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{item.title}</h4>
+                      <p className="text-[#777777] text-xs sm:text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className=" flex justify-around text-center text-sm font-medium text-blue-700 border-t pt-4 border-blue-100">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center text-xs sm:text-sm font-medium text-blue-700 border-t pt-3 sm:pt-4 border-blue-100">
                 <div>
-                  <p className="text-lg font-bold">48h</p>
+                  <p className="text-base sm:text-lg font-bold">48h</p>
                   <p>Processing</p>
                 </div>
                 <div>
-                  <p className="text-lg font-bold">95%</p>
+                  <p className="text-base sm:text-lg font-bold">95%</p>
                   <p>Recovery Rate</p>
                 </div>
                 <div>
-                  <p className="text-lg font-bold">Zero</p>
+                  <p className="text-base sm:text-lg font-bold">Zero</p>
                   <p>Waste Policy</p>
                 </div>
               </div>
@@ -208,6 +207,7 @@ function ColdChainReverseLogistics() {
               </div>
             </div>
           </section>
+
 
 
           {/* CTA Section */}
