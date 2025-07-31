@@ -257,12 +257,12 @@ function WhoWeAre() {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                    <button className="px-6 py-2 md:px-8 md:py-3 bg-white text-[#0052cc] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                    <Link to="/contact" className="px-6 py-2 md:px-8 md:py-3 bg-white text-[#0052cc] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                       Start Your Project
-                    </button>
-                    <button className="px-6 py-2 md:px-8 md:py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0052cc] transition-colors">
+                    </Link>
+                    {/* <button className="px-6 py-2 md:px-8 md:py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0052cc] transition-colors">
                       View Portfolio
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
