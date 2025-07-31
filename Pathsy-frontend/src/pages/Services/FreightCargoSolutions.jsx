@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPlane, FaShip, FaTruck, FaFileAlt, FaHome, FaWarehouse } from "react-icons/fa";
 import { FiClock, FiDollarSign, FiGlobe, FiShield, FiPackage, FiBox } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
   function FreightCargoSolutions() {
     const services = [
@@ -153,15 +154,15 @@ import { FiClock, FiDollarSign, FiGlobe, FiShield, FiPackage, FiBox } from "reac
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-          <button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white font-medium px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md hover:opacity-90 transition text-sm sm:text-base">
+          <Link to="/contact" className="bg-gradient-to-r from-blue-600 to-teal-500 text-white font-medium px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md hover:opacity-90 transition text-sm sm:text-base">
             Book Your Freight Solution Today →
-          </button>
-          <button className="border border-blue-600 text-blue-600 px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md font-medium hover:bg-blue-50 transition flex items-center justify-center gap-1 sm:gap-2 text-sm sm:text-base">
+          </Link>
+          {/* <button className="border border-blue-600 text-blue-600 px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md font-medium hover:bg-blue-50 transition flex items-center justify-center gap-1 sm:gap-2 text-sm sm:text-base">
             <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h11M9 21V3m0 0L5 7m4-4l4 4" />
             </svg>
             Get Instant Quote
-          </button>
+          </button> */}
         </div>
       </div>
       </div>

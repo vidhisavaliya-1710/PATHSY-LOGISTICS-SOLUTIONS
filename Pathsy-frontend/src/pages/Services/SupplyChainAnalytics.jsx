@@ -20,6 +20,7 @@ import {
     TrendingUp,
     LayoutDashboard,
 } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 function SupplyChainAnalytics() {
     const services = [
@@ -172,11 +173,11 @@ function SupplyChainAnalytics() {
                         insights, and real-time visibility that keeps you ahead of challenges and
                         opportunities.
                     </p>
-                    <button className="bg-gradient-to-r from-[#d32f2f] to-[#fbc02d] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors inline-flex items-center gap-2">
+                    <Link to="/contact" className="bg-gradient-to-r from-[#d32f2f] to-[#fbc02d] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors inline-flex items-center gap-2">
                         
                         Discover Data-Driven Logistics Today
                         <Clock className="w-5 h-5" />
-                    </button>
+                    </Link>
                 </div>
 
             </div>

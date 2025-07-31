@@ -47,12 +47,12 @@ function Navbar() {
                                 to="/" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
                                     isActive('/') 
-                                        ? 'text-[#004c99]' 
-                                        : 'text-gray-700 hover:text-[#004c99]'
+                                        ? 'text-[#0052cc]' 
+                                        : 'text-gray-700 hover:text-[#0052cc]'
                                 }`}
                             >
                                 Home
-                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                     isActive('/') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link>
@@ -60,12 +60,12 @@ function Navbar() {
                                 to="/whoWeAre" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
                                     isActive('/whoWeAre') 
-                                        ? 'text-[#004c99]' 
-                                        : 'text-gray-700 hover:text-[#004c99]'
+                                        ? 'text-[#0052cc]' 
+                                        : 'text-gray-700 hover:text-[#0052cc]'
                                 }`}
                             >
                                 Who We Are
-                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                     isActive('/whoWeAre') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link>
@@ -73,12 +73,12 @@ function Navbar() {
                                 to="/whyChoose" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
                                     isActive('/whyChoose') 
-                                        ? 'text-[#004c99]' 
-                                        : 'text-gray-700 hover:text-[#004c99]'
+                                        ? 'text-[#0052cc]' 
+                                        : 'text-gray-700 hover:text-[#0052cc]'
                                 }`}
                             >
                                 Why Choose Us
-                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                     isActive('/whyChoose') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link> */}
@@ -86,12 +86,12 @@ function Navbar() {
                                 to="/services" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
                                     isActive('/services') 
-                                        ? 'text-[#004c99]' 
-                                        : 'text-gray-700 hover:text-[#004c99]'
+                                        ? 'text-[#0052cc]' 
+                                        : 'text-gray-700 hover:text-[#0052cc]'
                                 }`}
                             >
                                 Services
-                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                     isActive('/services') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link>
@@ -99,12 +99,12 @@ function Navbar() {
                                 to="/careers" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
                                     isActive('/careers') 
-                                        ? 'text-[#004c99]' 
-                                        : 'text-gray-700 hover:text-[#004c99]'
+                                        ? 'text-[#0052cc]' 
+                                        : 'text-gray-700 hover:text-[#0052cc]'
                                 }`}
                             >
                                 Careers
-                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                     isActive('/careers') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link>
@@ -112,18 +112,18 @@ function Navbar() {
                                 to="/contact" 
                                 className={`relative py-2 text-sm font-medium transition-colors group ${
                                     isActive('/contact') 
-                                        ? 'text-[#004c99]' 
-                                        : 'text-gray-700 hover:text-[#004c99]'
+                                        ? 'text-[#0052cc]' 
+                                        : 'text-gray-700 hover:text-[#0052cc]'
                                 }`}
                             >
                                 Contact
-                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                     isActive('/contact') ? 'w-full' : 'w-0 group-hover:w-full'
                                 }`}></span>
                             </Link>
                             <Link 
                                 to="/contact"
-                                className="bg-[#004c99] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors"
+                                className="bg-[#0052cc] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors"
                             >
                                Request A Quote
                             </Link>
@@ -134,7 +134,7 @@ function Navbar() {
                     <div className="lg:hidden">
                         <button
                             onClick={toggleMenu}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#004c99] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#004c99]"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#0052cc] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0052cc]"
                         >
                             {isMenuOpen ? (
                                 <X className="block h-6 w-6" />
@@ -155,12 +155,12 @@ function Navbar() {
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
                                 isActive('/') 
-                                    ? 'text-[#004c99] bg-gray-50' 
-                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                                    ? 'text-[#0052cc] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#0052cc] hover:bg-gray-50'
                             }`}
                         >
                             Home
-                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                 isActive('/') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link>
@@ -169,12 +169,12 @@ function Navbar() {
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
                                 isActive('/whoWeAre') 
-                                    ? 'text-[#004c99] bg-gray-50' 
-                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                                    ? 'text-[#0052cc] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#0052cc] hover:bg-gray-50'
                             }`}
                         >
                             Who We Are
-                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                 isActive('/whoWeAre') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link>
@@ -183,12 +183,12 @@ function Navbar() {
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
                                 isActive('/whyChoose') 
-                                    ? 'text-[#004c99] bg-gray-50' 
-                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                                    ? 'text-[#0052cc] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#0052cc] hover:bg-gray-50'
                             }`}
                         >
                             Why Choose Us
-                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                 isActive('/whyChoose') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link> */}
@@ -197,12 +197,12 @@ function Navbar() {
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
                                 isActive('/services') 
-                                    ? 'text-[#004c99] bg-gray-50' 
-                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                                    ? 'text-[#0052cc] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#0052cc] hover:bg-gray-50'
                             }`}
                         >
                             Services
-                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                 isActive('/services') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link>
@@ -211,12 +211,12 @@ function Navbar() {
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
                                 isActive('/careers') 
-                                    ? 'text-[#004c99] bg-gray-50' 
-                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                                    ? 'text-[#0052cc] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#0052cc] hover:bg-gray-50'
                             }`}
                         >
                             Careers
-                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                 isActive('/careers') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link>
@@ -225,12 +225,12 @@ function Navbar() {
                             onClick={closeMenu}
                             className={`relative block px-3 py-2 text-base font-medium group ${
                                 isActive('/contact') 
-                                    ? 'text-[#004c99] bg-gray-50' 
-                                    : 'text-gray-700 hover:text-[#004c99] hover:bg-gray-50'
+                                    ? 'text-[#0052cc] bg-gray-50' 
+                                    : 'text-gray-700 hover:text-[#0052cc] hover:bg-gray-50'
                             }`}
                         >
                             Contact
-                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#004c99] transition-all duration-300 ${
+                            <span className={`absolute bottom-1 left-3 h-0.5 bg-[#0052cc] transition-all duration-300 ${
                                 isActive('/contact') ? 'w-[calc(100%-1.5rem)]' : 'w-0 group-hover:w-[calc(100%-1.5rem)]'
                             }`}></span>
                         </Link>
@@ -238,7 +238,7 @@ function Navbar() {
                             <Link 
                                 to="/contact"
                                 onClick={closeMenu}
-                                className="block w-full bg-[#004c99] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors text-center"
+                                className="block w-full bg-[#0052cc] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#003d7a] transition-colors text-center"
                             >
                                 Request A Quote
                             </Link>

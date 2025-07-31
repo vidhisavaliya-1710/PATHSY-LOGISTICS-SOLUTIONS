@@ -2,6 +2,7 @@ import React from 'react'
 import { FaRoute, FaMapMarkerAlt, FaBolt, FaShieldAlt, FaUndoAlt, FaClock } from "react-icons/fa";
 import { FiEye, FiZap, FiShield, FiRefreshCw, FiTrendingUp, FiClock } from "react-icons/fi";
 import { MdOutlineUpdate } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 
 function AIPoweredLastMile() {
@@ -165,9 +166,9 @@ function AIPoweredLastMile() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-          <button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white font-medium px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md hover:opacity-90 transition text-sm sm:text-base">
+          <Link to="/contact" className="bg-gradient-to-r from-blue-600 to-teal-500 text-white font-medium px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md hover:opacity-90 transition text-sm sm:text-base">
            Experience Smarter Deliveries Today →
-          </button>
+          </Link>
         </div>
       </div>
       </div>

@@ -8,6 +8,7 @@ import {
   FaLeaf,
 } from "react-icons/fa";
 import { Pill, Apple, Laptop, HeartPulse } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 function ColdChainReverseLogistics() {
@@ -215,9 +216,9 @@ const industries = [
                                 Whether it's keeping products at the perfect temperature or managing complex returns, our specialized logistics solutions ensure your goods are handled with the care they deserve.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-                                <button className="bg-gradient-to-r from-[#d32f2f] to-[#7b1fa2]  text-white px-6 py-3 rounded-xl font-semibold transition">
+                                <Link to="/contact" className="bg-gradient-to-r from-[#d32f2f] to-[#7b1fa2]  text-white px-6 py-3 rounded-xl font-semibold transition">
                                     Streamline Cold Chain & Reverse Logistics Today →
-                                </button>
+                                </Link>
                                 
                             </div>
                             
