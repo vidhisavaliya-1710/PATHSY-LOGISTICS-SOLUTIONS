@@ -13,6 +13,7 @@ import ExhibitionLogisticsDesign from './pages/Services/ExhibitionLogisticsDesig
 import FreightCargoSolutions from './pages/Services/FreightCargoSolutions'
 import AIPoweredLastMile from './pages/Services/AIPoweredLastMile'
 import SupplyChainAnalytics from './pages/Services/SupplyChainAnalytics'
+import ColdChainReverseLogistics from './pages/Services/ColdChainReverseLogistics'
 
 function AllRoutes() {
     return (
@@ -30,6 +31,7 @@ function AllRoutes() {
                 {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
                 <Route path='/services/Freight&CargoSolutions' element={<FreightCargoSolutions/>}/>
                 <Route path='/services/AIPoweredLastMile' element={<AIPoweredLastMile/>}/>
+                <Route path='/services/ColdChain&ReverseLogistics' element={<ColdChainReverseLogistics/>}/>
                 <Route path="/services/supplyChainAnalytics" element={<SupplyChainAnalytics/>}/>
 
 
