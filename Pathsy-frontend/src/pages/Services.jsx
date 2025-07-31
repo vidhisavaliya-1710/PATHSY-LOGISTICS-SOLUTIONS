@@ -9,7 +9,8 @@ function Services() {
       title: "Freight & Cargo Solutions",
       description: "Road, Air & Sea Shipping with flexible options for every cargo type. Specialized handling for bulk & fragile shipments with real-time tracking.",
       bgColor: "bg-blue-600",
-      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#26a69a]"
+      iconBg: "bg-gradient-to-br from-[#0052cc] to-[#26a69a]",
+      link:"/services/Freight&CargoSolutions"
     },
     {
       icon: <Package className="w-8 h-8 text-white" />,
@@ -32,7 +33,8 @@ function Services() {
       title: "AI-Powered Last-Mile",
       description: "Fast deliveries with route optimization solutions powered by AI. Live tracking with updates via SMS & email notifications for complete transparency.",
       bgColor: "bg-purple-600",
-      iconBg: "bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]"
+      iconBg: "bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]",
+      link:"/services/AIPoweredLastMile"
     },
     {
       icon: <BarChart3 className="w-8 h-8 text-white" />,
@@ -90,7 +92,6 @@ function Services() {
                 </p>
 
                 {/* Learn More Button */}
-                <Link to='/services/Freight&CargoSolutions'>
                 
                 <Link to={service.link} className="inline-flex items-center text-[#0052cc] font-semibold hover:text-[#0052cc] transition-colors duration-300 group/btn">
                   Learn More
@@ -103,7 +104,7 @@ function Services() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-                </Link>
+                
               </div>
             ))}
           </div>

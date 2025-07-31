@@ -77,7 +77,7 @@ import { FiClock, FiDollarSign, FiGlobe, FiShield, FiPackage, FiBox } from "reac
             Global Shipping. Local Expertise.
           </p>
 
-          <p className="text-[#777777] max-w-3xl mx-auto text-sm sm:text-base">
+          <p className="text-[#777777] max-w-3xl mx-auto text-sm sm:text-lg">
             Move your cargo anywhere in the world with our reliable, cost-effective, and time-bound freight solutions.
             We ensure every shipment reaches its destination safely and on schedule.
           </p>
@@ -115,7 +115,7 @@ import { FiClock, FiDollarSign, FiGlobe, FiShield, FiPackage, FiBox } from "reac
       {/* Statistics Section */}
       <div className="px-4 sm:px-6 py-10 sm:py-12 md:py-14">
         <div className="max-w-6xl mx-auto bg-gradient-to-r from-blue-700 to-teal-500 rounded-3xl py-10 sm:py-12 md:py-16 px-6 sm:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-white mb-3 sm:mb-4">
             From Small Parcels to Heavy Loads
           </h2>
           <p className="text-blue-100 max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10 text-sm sm:text-base">
@@ -144,7 +144,7 @@ import { FiClock, FiDollarSign, FiGlobe, FiShield, FiPackage, FiBox } from "reac
       <div className='px-4 sm:px-6 '>
 
       <div className="px-4 sm:px-6 py-8 sm:py-10 bg-white shadow-xl rounded-2xl max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">
           Ready to Ship Your Cargo?
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-4 sm:mb-5 text-sm sm:text-base">
