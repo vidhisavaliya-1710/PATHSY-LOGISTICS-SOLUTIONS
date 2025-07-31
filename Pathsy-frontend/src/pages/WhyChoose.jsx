@@ -17,6 +17,7 @@ import {
     Network,
     Trees,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function WhyChoose() {
 
@@ -180,12 +181,10 @@ function WhyChoose() {
                     Experience the Pathsy difference and see why leading businesses choose us for their logistics and exhibition needs.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <button className="bg-white text-black px-6 py-4 rounded-2xl font-semibold hover:bg-gray-200 transition">
-                        Start Your Journey
-                    </button>
-                    <button className="bg-black text-white px-6 py-4 rounded-2xl font-semibold hover:bg-gray-800 transition">
-                        Explore Services
-                    </button>
+                    <Link to="/services" className="bg-white text-black px-6 py-4 rounded-2xl font-semibold hover:bg-gray-200 transition">
+                       Explore Services
+                    </Link>
+                   
                 </div>
             </div>
         </section>

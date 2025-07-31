@@ -4,6 +4,7 @@ import { Globe, PenTool, Bot } from 'lucide-react'; // Add these at the top
 import whoweare from "../assets/images/whoweare.png";
 import Exhibition from '../assets/images/exhibition.png'
 import { FaDraft2Digital, FaDraftingCompass, FaHeadphonesAlt, FaTools, FaTruck } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function WhoWeAre() {
     return (
@@ -89,14 +90,11 @@ function WhoWeAre() {
 
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="bg-[#0052cc] hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center gap-2">
+                                <Link to="/whyChoose" className="bg-[#0052cc] hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center gap-2">
                                     Learn About Us
                                     <ArrowRight className="w-5 h-5" />
-                                </button>
-                                <button className="text-[#0052cc] bg-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center gap-2">
-                                    Get Started
-                                    <ArrowRight className="w-5 h-5" />
-                                </button>
+                                </Link>
+                                
                             </div>
                         </div>
 

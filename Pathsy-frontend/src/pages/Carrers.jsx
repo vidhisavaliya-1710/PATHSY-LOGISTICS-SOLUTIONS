@@ -138,9 +138,9 @@ function Careers() {
                 <div className="text-xl md:text-2xl font-bold text-[#0052cc]">
                   $85k - $110k <span className="text-xs md:text-sm font-normal text-gray-500">+ Benefits</span>
                 </div>
-                <button className="bg-gradient-to-r from-[#0052cc] to-[#26a69a] text-white px-5 py-2 md:px-6 md:py-2 rounded-lg font-medium hover:shadow-lg transition-all w-full sm:w-auto text-center">
+                {/* <button className="bg-gradient-to-r from-[#0052cc] to-[#26a69a] text-white px-5 py-2 md:px-6 md:py-2 rounded-lg font-medium hover:shadow-lg transition-all w-full sm:w-auto text-center">
                   Apply Now
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -201,9 +201,9 @@ function Careers() {
                 <div className="text-xl md:text-2xl font-bold text-[#0052cc]">
                   $65k - $85k <span className="text-xs md:text-sm font-normal text-gray-500">+ Benefits</span>
                 </div>
-                <button className="bg-gradient-to-r from-[#0052cc] to-[#26a69a] text-white px-5 py-2 md:px-6 md:py-2 rounded-lg font-medium hover:shadow-lg transition-all w-full sm:w-auto text-center">
+                {/* <button className="bg-gradient-to-r from-[#0052cc] to-[#26a69a] text-white px-5 py-2 md:px-6 md:py-2 rounded-lg font-medium hover:shadow-lg transition-all w-full sm:w-auto text-center">
                   Apply Now
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

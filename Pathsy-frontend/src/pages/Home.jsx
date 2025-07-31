@@ -9,7 +9,7 @@ import { FaDraft2Digital, FaDraftingCompass, FaHeadphonesAlt, FaTools, FaTruck }
 import WhyChoose from './WhyChoose';
 import { Brain, Shield, Bot, Check, Play } from 'lucide-react';
 import Careers from './Carrers';
-import { Link } from 'react-router-dom';
+import { Link, Links } from 'react-router-dom';
 import Contact from './Contact';
 
 export default function LogisticsHero() {
@@ -69,9 +69,9 @@ export default function LogisticsHero() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <button className="flex items-center justify-center px-6 py-3 rounded-lg bg-[#0052cc] text-white hover:bg-blue-700 transition">
+            <Link to="/contact" className="flex items-center justify-center px-6 py-3 rounded-lg bg-[#0052cc] text-white hover:bg-blue-700 transition">
               Request Quote <Quote className="ml-2 w-5 h-5" />
-            </button>
+            </Link>
             <Link to='/services'>
               <button className="flex items-center justify-center px-6 py-3 rounded-lg bg-white text-[#0052cc] hover:bg-gray-100 transition">
               Our Services <HandCoins className="ml-2 w-5 h-5" />
@@ -199,14 +199,14 @@ export default function LogisticsHero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-              <button className="inline-flex items-center justify-center px-5 py-2 md:px-6 md:py-3 bg-white text-[#0052cc] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <Link to="/contact" className="inline-flex items-center justify-center px-5 py-2 md:px-6 md:py-3 bg-white text-[#0052cc] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                 Get Started Today
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-              <button className="inline-flex items-center justify-center px-5 py-2 md:px-6 md:py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0052cc] transition-colors">
+              </Link>
+              <Link to="/services" className="inline-flex items-center justify-center px-5 py-2 md:px-6 md:py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0052cc] transition-colors">
                 Explore Technology
                 <Play className="ml-2 w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
           
