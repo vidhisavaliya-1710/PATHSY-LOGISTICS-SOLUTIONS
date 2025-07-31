@@ -1,7 +1,6 @@
 import React from 'react';
 import { Truck, Package, Monitor, BarChart3, Snowflake, Warehouse } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 function Services() {
   const services = [
@@ -26,7 +25,7 @@ function Services() {
       description: "Custom booth designs with eye-catching brand-aligned structures. Global event logistics with end-to-end transport, setup & dismantling.",
       bgColor: "bg-orange-600",
       iconBg: "bg-gradient-to-br from-[#fbc02d] to-[#d32f2f]",
-      link:"serices/exhibitionLogisticsDesign"
+      link:"/serices/exhibitionLogisticsDesign"
     },
     {
       icon: <Truck className="w-8 h-8 text-white" />,
@@ -40,7 +39,8 @@ function Services() {
       title: "Supply Chain Analytics",
       description: "End-to-end visibility to track & freight factory to delivery. Predictive analytics to reduce operational costs & delays with AI insights.",
       bgColor: "bg-indigo-600",
-      iconBg: "bg-gradient-to-br from-[#7b1fa2] to-[#0052cc]"
+      iconBg: "bg-gradient-to-br from-[#7b1fa2] to-[#0052cc]",
+      link:"/services/supplyChainAnalytics"
     },
     {
       icon: <Snowflake className="w-8 h-8 text-white" />,

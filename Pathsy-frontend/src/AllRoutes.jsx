@@ -12,6 +12,7 @@ import TechEnabledWarehousing from './pages/Services/TechEnabledWarehousing'
 import ExhibitionLogisticsDesign from './pages/Services/ExhibitionLogisticsDesign'
 import FreightCargoSolutions from './pages/Services/FreightCargoSolutions'
 import AIPoweredLastMile from './pages/Services/AIPoweredLastMile'
+import SupplyChainAnalytics from './pages/Services/SupplyChainAnalytics'
 
 function AllRoutes() {
     return (
@@ -25,10 +26,11 @@ function AllRoutes() {
                 <Route path="/careers" element={<Carrers />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services/techEnabledWarehousing" element={<TechEnabledWarehousing/>}/>
-                <Route path="serices/exhibitionLogisticsDesign" element={<ExhibitionLogisticsDesign/>}/>
+                <Route path="/serices/exhibitionLogisticsDesign" element={<ExhibitionLogisticsDesign/>}/>
                 {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
                 <Route path='/services/Freight&CargoSolutions' element={<FreightCargoSolutions/>}/>
                 <Route path='/services/AIPoweredLastMile' element={<AIPoweredLastMile/>}/>
+                <Route path="/services/supplyChainAnalytics" element={<SupplyChainAnalytics/>}/>
 
 
             </Routes>
