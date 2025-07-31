@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import HelpAndSupport from './pages/HelpAndSupport'
 import WhoWeAre from './pages/WhoWeAre'
 import WhyChoose from './pages/WhyChoose'
+import FreightCargoSolutions from './pages/Services/FreightCargoSolutions'
 
 function AllRoutes() {
     return (
@@ -21,6 +22,7 @@ function AllRoutes() {
                 <Route path="/careers" element={<Carrers />} />
                 <Route path="/contact" element={<Contact />} />
                 {/* <Route path="/helpAndSupport" element={<HelpAndSupport/>}/> */}
+                <Route path='/services/Freight&CargoSolutions' element={<FreightCargoSolutions/>}/>
 
 
             </Routes>

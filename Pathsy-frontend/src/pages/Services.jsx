@@ -1,5 +1,6 @@
 import React from 'react';
 import { Truck, Package, Monitor, BarChart3, Snowflake, Warehouse } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Services() {
   const services = [
@@ -86,6 +87,8 @@ function Services() {
                 </p>
 
                 {/* Learn More Button */}
+                <Link to='/services/Freight&CargoSolutions'>
+                
                 <button className="inline-flex items-center text-[#0052cc] font-semibold hover:text-[#0052cc] transition-colors duration-300 group/btn">
                   Learn More
                   <svg
@@ -97,6 +100,7 @@ function Services() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
+                </Link>
               </div>
             ))}
           </div>
