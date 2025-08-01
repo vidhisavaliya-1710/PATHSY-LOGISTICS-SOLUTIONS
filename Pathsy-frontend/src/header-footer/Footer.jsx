@@ -76,7 +76,7 @@ const Footer = () => {
               <li><Link to='/services/techEnabledWarehousing' className="hover:text-white block transition-colors">Tech-Enabled Warehousing</Link></li>
               <li><Link to='/serices/exhibitionLogisticsDesign' className="hover:text-white block transition-colors">Exhibition Logistics & Design</Link></li>
               <li><Link to='/services/AIPoweredLastMile' className="hover:text-white block transition-colors">AI-Powered Last-Mile</Link></li>
-              <li><Link to='/services/supplyChainAnalytic' className="hover:text-white block transition-colors">Supply Chain Analytics</Link></li>
+              <li><Link to='/services/supplyChainAnalytics' className="hover:text-white block transition-colors">Supply Chain Analytics</Link></li>
               <li><Link to='services/ColdChain&ReverseLogistics' className="hover:text-white block transition-colors">Cold Chain & Reverse Logistics</Link></li>
             </ul>
           </div>
