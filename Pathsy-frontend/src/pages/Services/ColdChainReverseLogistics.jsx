@@ -89,7 +89,7 @@ function ColdChainReverseLogistics() {
               <div className="space-y-4 mb-6">
                 {coldChainServices.map((item, index) => (
                   <div key={index} className="flex gap-4 items-center">
-                    <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]  rounded-lg">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-[#d32f2f] to-[#7b1fa2]  rounded-lg">
                       {item.icon}
                     </div>
 
