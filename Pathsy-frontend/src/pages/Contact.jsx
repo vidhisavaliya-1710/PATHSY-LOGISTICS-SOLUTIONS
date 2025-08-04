@@ -26,80 +26,81 @@ export default function Contact() {
 
 
         {/* Contact Information */}
-        <div className="flex gap-6 w-full">
-          {/* Get in Touch */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-300 flex-1">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+        <div className="flex flex-col lg:flex-row gap-6 w-full">
+  {/* Get in Touch */}
+  <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-300 w-full lg:w-1/2">
+    <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
 
-            <div className="space-y-7">
-              <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-br from-[#0052cc] to-[#26a69a] p-3 rounded-xl">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Call Us</h3>
-                  <p className="text-[#0052cc] font-medium">+1 (555) 123-4567</p>
-                  <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM EST</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-br from-[#26a69a] to-[#fbc02d] p-3 rounded-xl">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Email Us</h3>
-                  <p className="text-[#26a69a] font-medium">info@operations.com</p>
-                  <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-br from-[#fbc02d] to-[#d32f2f] p-3 rounded-xl">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Visit Us</h3>
-                  <p className="text-[#d32f2f] font-medium">123 Business Center Dr</p>
-                  <p className="text-sm text-gray-500">Suite 500<br />New York, NY 10001</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Why Choose Us */}
-          <div className="flex flex-col space-y-6 flex-1">
-            <div className="bg-gradient-to-br from-[#0052cc] to-[#26a69a] rounded-2xl shadow-lg p-8 text-white">
-              <h2 className="text-2xl font-bold mb-6">Why Choose Us?</h2>
-
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold mb-2">24/7</div>
-                  <div className="text-blue-100">Support Available</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold mb-2">500+</div>
-                  <div className="text-blue-100">Projects Completed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold mb-2">99%</div>
-                  <div className="text-blue-100">On-Time Delivery</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold mb-2">50+</div>
-                  <div className="text-blue-100">Countries Served</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Emergency Support */}
-            <div className="bg-gradient-to-r from-[#d32f2f] to-[#7b1fa2] rounded-xl shadow-lg p-6 text-white text-center ">
-              <h3 className="text-lg font-bold mb-2">Emergency Support</h3>
-              <p className="mb-4 text-red-100">Need urgent assistance?</p>
-              <div className="text-xl font-bold">+1 (555) 911-HELP</div>
-            </div>
-          </div>
+    <div className="space-y-7">
+      <div className="flex items-start space-x-4">
+        <div className="bg-gradient-to-br from-[#0052cc] to-[#26a69a] p-3 rounded-xl">
+          <Phone className="w-6 h-6 text-white" />
         </div>
+        <div>
+          <h3 className="font-semibold text-gray-900">Call Us</h3>
+          <p className="text-[#0052cc] font-medium">+1 (555) 123-4567</p>
+          <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM EST</p>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-4">
+        <div className="bg-gradient-to-br from-[#26a69a] to-[#fbc02d] p-3 rounded-xl">
+          <Mail className="w-6 h-6 text-white" />
+        </div>
+        <div>
+          <h3 className="font-semibold text-gray-900">Email Us</h3>
+          <p className="text-[#26a69a] font-medium">info@operations.com</p>
+          <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-4">
+        <div className="bg-gradient-to-br from-[#fbc02d] to-[#d32f2f] p-3 rounded-xl">
+          <MapPin className="w-6 h-6 text-white" />
+        </div>
+        <div>
+          <h3 className="font-semibold text-gray-900">Visit Us</h3>
+          <p className="text-[#d32f2f] font-medium">123 Business Center Dr</p>
+          <p className="text-sm text-gray-500">Suite 500<br />New York, NY 10001</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Why Choose Us + Emergency */}
+  <div className="flex flex-col space-y-6 w-full lg:w-1/2">
+    <div className="bg-gradient-to-br from-[#0052cc] to-[#26a69a] rounded-2xl shadow-lg p-6 sm:p-8 text-white">
+      <h2 className="text-2xl font-bold mb-6">Why Choose Us?</h2>
+
+      <div className="grid grid-cols-2 gap-6">
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">24/7</div>
+          <div className="text-blue-100">Support Available</div>
+        </div>
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">500+</div>
+          <div className="text-blue-100">Projects Completed</div>
+        </div>
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">99%</div>
+          <div className="text-blue-100">On-Time Delivery</div>
+        </div>
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">50+</div>
+          <div className="text-blue-100">Countries Served</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Emergency Support */}
+    <div className="bg-gradient-to-r from-[#d32f2f] to-[#7b1fa2] rounded-xl shadow-lg p-6 text-white text-center">
+      <h3 className="text-lg font-bold mb-2">Emergency Support</h3>
+      <p className="mb-4 text-red-100">Need urgent assistance?</p>
+      <div className="text-xl font-bold">+1 (555) 911-HELP</div>
+    </div>
+  </div>
+</div>
+
       </div>
 
 
